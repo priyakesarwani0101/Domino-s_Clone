@@ -1,6 +1,7 @@
 {
     "veg_pizza":[
         {
+            "id":1,
             "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
              "title": "Margherita everyday ss pizza",
              "price": 180,
@@ -9,6 +10,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":2,
             "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
              "title": "Caprese Gourmet Pizza",
              "price": 390,
@@ -17,6 +19,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":3,
             "image": "https://i.ytimg.com/vi/fHo1j3VF7VE/maxresdefault.jpg",
              "title": "Farmhouse cheese burst pizza",
              "price": 460 ,
@@ -25,6 +28,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":4,
             "image": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1",
              "title": "Peppy paneer pizza",
              "price": 385,
@@ -33,6 +37,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":5,
             "image": "https://bizknow.in/PizzaHouse/images/Veg-Pizza/Peppy%20Paneer%20Pizza.jpg",
              "title": "Pizza house",
              "price":295,
@@ -41,6 +46,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":6,
             "image": "https://img-global.cpcdn.com/recipes/27026a9b07074850/1200x630cq70/photo.jpg",
              "title": "Capsicum cheese and corn pizza",
              "price": 400,
@@ -49,6 +55,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":7,
             "image": "https://www.spicypunch.com/wp-content/uploads/2020/07/veg-pizza.jpg",
              "title": "Fresh veggie pizza",
              "price": 450,
@@ -57,6 +64,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":8,
             "image": "https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_10192_70201.jpg",
              "title": "Plant based mexican pizza",
              "price": 600,
@@ -65,6 +73,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":9,
             "image": "https://res.cloudinary.com/gonation/w_2500/q_auto/f_auto/gonation.data.prod/rpa72ptntbwv35wxnpzd",
              "title": "Paradise pizza",
              "price":250,
@@ -73,6 +82,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":10,
             "image": "https://static.toiimg.com/thumb/59202050.cms?width=1200&height=900",
              "title": "Red bell pepper-corn pizza",
              "price": 320,
@@ -81,6 +91,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":11,
             "image": "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lvhvocjkakabphxah8ll",
              "title": "Green burst pizza",
              "price": 290,
@@ -89,6 +100,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":12,
             "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2018/05/indian-paneer-pizza-recipe.jpg",
              "title": "Paneer pizza",
              "price": 195,
@@ -97,6 +109,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":13,
             "image": "https://www.mashed.com/img/gallery/how-authentic-pizza-is-different-from-the-american-version/intro-1606849151.jpg",
              "title": "Pepperoni pizza",
              "price":420,
@@ -104,15 +117,9 @@
              "quantity":1,
              "category": "veg_pizza "
         },
+        
         {
-            "image": "data:image/jpeg;base64,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",
-             "title": "American pizza",
-             "price": 590,
-             "ratings": 3.9,
-             "quantity": 1,
-             "category": " veg_pizza"
-        },
-        {
+            "id":14,
             "image": "https://images.jdmagicbox.com/quickquotes/images_main/garden-fresh-veggie-pizza-11-inch-380221300-3d8x4.jpg",
              "title": "Garden fresh veggie pizza",
              "price":340,
@@ -121,6 +128,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":15,
             "image": "https://lh3.googleusercontent.com/pGt3zE4FPquWWNwSzpOl2zVIg2Fobis5aCgxDQ-41ThotdoyR8Vt71VXDWbPWEYHlJ_Zksc_WsbdctQIO97QgPlmf4OUbgx6O37dDTH4=w512-rw",
              "title": "Veggie loaded pizza",
              "price": 280,
@@ -129,6 +137,7 @@
              "category": "veg_pizza "
         },
         {
+            "id":16,
             "image": "https://vegplatter.in/files/public/images/partner/catalog/125/Farm%20House%20Pizza.jpg",
              "title": "Farm veg platter",
              "price": 320 ,
@@ -137,6 +146,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":17,
             "image": "https://www.cookingclassy.com/wp-content/uploads/2020/08/french-bread-pizza-1.jpg",
              "title": "french bread pizza",
              "price": 200,
@@ -145,6 +155,7 @@
              "category": " veg_pizza"
         },
         {
+            "id":18,
             "image": "https://i.ytimg.com/vi/tDpKXR_xfzk/maxresdefault.jpg",
              "title": "Bread pizza",
              "price":120,
@@ -161,7 +172,7 @@
         "price":145,
         "description":"Instant Fusilli Pasta, Harissa Sauce, Onion, Mushroom, Olives, Parsley sprinkle",
         "image":"https://www.dominos.co.in//files/items/MoroccanPastaVeg_N_(1).jpg",
-        "rating":4.0,
+        "ratings":4.0,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -171,7 +182,7 @@
         "price":129,
         "description":"Instant Fusilli Pasta, Spicy Red dressing, Onion, Paneer Tikka, Parsley sprinkle",
         "image":"https://www.dominos.co.in//files/items/PaneerTikkaMasala_N.jpg",
-        "rating":3.5,
+        "ratings":3.5,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -181,7 +192,7 @@
         "price":145,
         "description":"Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olive, Green Capsicum, Parsley sprinkle",
         "image":"https://www.dominos.co.in//files/items/CreamyTomatoVeg_N_(3).jpg",
-        "rating":5.0,
+        "ratings":5.0,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -191,7 +202,7 @@
         "price":160,
         "description":"Pasta alla Norma is one of Sicily’s most loved pasta dishes",
         "image":"https://media-cdn.greatbritishchefs.com/media/a3qhmcs0/img72629.jpg?mode=crop&width=768&height=512",
-        "rating":3.6,
+        "ratings":3.6,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -201,7 +212,7 @@
         "price":140,
         "description":"This easy vegetable pasta pairs spaghetti with colorful roasted veggies! It’s a healthy dinner idea for loading up on the good stuff.   ",
         "image":"https://www.acouplecooks.com/wp-content/uploads/2021/11/Vegetable-Spaghetti-002-768x960.jpg",
-        "rating":5.0,
+        "ratings":5.0,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -211,7 +222,7 @@
         "price":170,
         "description":"Cheese tortellini makes the best quick dinner recipe! Serve it up in a creamy marinara sauce flavored with goat cheese and basil.",
         "image":"https://www.acouplecooks.com/wp-content/uploads/2021/03/Cheese-Tortellini-011-735x919.jpg",
-        "rating":3.0,
+        "ratings":3.0,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -221,7 +232,7 @@
         "price":125,
         "description":"This vegetarian lasagna recipe is a total crowd pleaser! The easy spinach and ricotta cheese filling is classic and creamy.",
         "image":"https://www.acouplecooks.com/wp-content/uploads/2020/12/Vegetarian-Lasagna-011-735x980.jpg",
-        "rating":4.0,
+        "ratings":4.0,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -231,7 +242,7 @@
         "price":120,
         "description":"Pomodoro sauce is a classic Italian tomato-based pasta sauce that makes any noodle shine!",
         "image":"https://www.acouplecooks.com/wp-content/uploads/2022/11/Pasta-Pomodoro-009-735x919.jpg",
-        "rating":5.0,
+        "ratings":5.0,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -241,7 +252,7 @@
         "price":150,
         "description":"This stuffed shells recipe is easy and a crowd pleaser! The ricotta stuffed pasta shells swimming in tomato sauce are a hit every time.",
         "image":"https://www.acouplecooks.com/wp-content/uploads/2022/09/Stuffed-Shells-002-735x919.jpg",
-        "rating":3.5,
+        "ratings":3.5,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -251,7 +262,7 @@
         "price":160,
         "description":"pasta with garlicky tomato sauce, fresh basil, and gooey mozzarella.",
         "image":"https://www.acouplecooks.com/wp-content/uploads/2020/06/Baked-Rigatoni-013-735x919.jpg",
-        "rating":4.5,
+        "ratings":4.5,
         "quantity":1,
         "category":"veg pasta"
     },
@@ -261,7 +272,7 @@
         "price":285,
         "description":"Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olives, BBQ Pepper Chicken, Parsley sprinkle",
         "image":"https://www.dominos.co.in//files/items/CreamyTomatoNV_N.jpg",
-        "rating":3.0,
+        "ratings":3.0,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -271,7 +282,7 @@
         "price":155,
         "description":"Instant Fusilli Pasta, Spicy Red dressing, Onion, Chicken Tikka, Parsley sprinkle",
         "image":"https://www.dominos.co.in//files/items/ChickenTikkaMasala_N.jpg",
-        "rating":5.0,
+        "ratings":5.0,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -281,7 +292,7 @@
         "price":165,
         "description":"Instant Fusilli Pasta, Harissa Sauce, Onion, Olives, Meatballs, Parsley sprinkle",
         "image":"https://www.dominos.co.in//files/items/MoroccanPastaNonVeg_N.jpg",
-        "rating":3.5,
+        "ratings":3.5,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -291,7 +302,7 @@
         "price":285,
         "description":"The combination of chicken, mushrooms, cheese and spaghetti makes this baked recipe absolutely irresistible.",
         "image":"https://c.ndtvimg.com/2018-11/iaoeh1p8_chicken-tetrazine_625x300_30_November_18.jpg",
-        "rating":4.0,
+        "ratings":4.0,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -301,7 +312,7 @@
         "price":325,
         "description":"Toss it up with penne and throw in some smoked chicken and plump cherry tomatoes",
         "image":"https://www.ndtv.com/cooks/images/pesto.pasta.jpg",
-        "rating":4.5,
+        "ratings":4.5,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -311,7 +322,7 @@
         "price":175,
         "description":"Crispy chicken, garlic and onions are tossed with cooked spaghetti and egg.",
         "image":"https://www.ndtv.com/cooks/images/spaghetti_620x330_41506078754.jpg",
-        "rating":5.0,
+        "ratings":5.0,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -321,7 +332,7 @@
         "price":190,
         "description":"Spicy tomato sauce, tender chicken chunks, aromatic herbs",
         "image":"https://c.ndtvimg.com/2020-09/g3o5hlh_pasta_625x300_29_September_20.jpg",
-        "rating":3.0,
+        "ratings":3.0,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -331,7 +342,7 @@
         "price":375,
         "description":"White wine infused chicken dumplings, lasagna roundels and bechamel sauce cooked together and served with poultry.",
         "image":"https://i.ndtvimg.com/i/2016-04/lasgana_625x350_51459504335.jpg",
-        "rating":3.5,
+        "ratings":3.5,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -341,7 +352,7 @@
         "price":265,
         "description":" Penne pasta with a whole lot of spices, carrots, beans, celery and chilli flakes loaded with shredded cheese",
         "image":"https://i.ndtvimg.com/i/2017-08/spicy-chicken-pasta_650x400_81503903192.jpg",
-        "rating":4.0,
+        "ratings":4.0,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -351,7 +362,7 @@
         "price":495,
         "description":"one pot meal with Bolognese sauce which is a meat-based sauce for pasta",
         "image":"https://i.ndtvimg.com/i/2016-05/spaghetti_625x350_41462301394.jpg",
-        "rating":4.5,
+        "ratings":4.5,
         "quantity":1,
         "category":"non veg pasta"
     },
@@ -361,9 +372,194 @@
         "price":582,
         "description":"It is a combination of the goodness and taste of both mushroom and chicken laden with creamy and cheesy white sauce.",
         "image":"https://c.ndtvimg.com/2022-02/cphobl9_white-sauce-pasta_625x300_17_February_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350",
-        "rating":5.0,
+        "ratings":5.0,
         "quantity":1,
         "category":"non veg pasta"
     }
+    ],
+
+    "pizza-mania":[
+        {
+            "id":1001,
+            "image":"https://www.dominos.co.in//files/items/pizza_mania_tomato.png",
+            "title":"TOMATO",
+            "price":59,
+            "ratings":4.5,
+            "quantity": 1,
+            "category": "pizza-mania"       
+        },
+        {
+            "id":1002,
+            "image":"https://www.dominos.co.in//files/items/PrimeLoadedL.jpg",
+            "title":"VEG LOADED",
+            "price":119,
+            "ratings":4.4,
+            "quantity":1,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1003,
+            "image":"https://www.dominos.co.in//files/items/PrimeCheesyL.jpg",
+            "title":"CHEESY",
+            "price":95,
+            "ratings":4.5,
+            "quantity":1 , 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1004,
+            "image":"https://www.dominos.co.in//files/items/Paneer_Special.jpg",
+            "title":"PANEER & ONION",
+            "price":89,
+            "ratings":4.3,
+            "quantity": 1,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1005,
+            "image":"https://www.dominos.co.in//files/items/CapsicumVeg.jpg",
+            "title":"CAPSICUM",
+            "price":69,
+            "ratings":4.4,
+            "quantity":1 , 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1006,
+            "image":"https://www.dominos.co.in//files/items/onion_veg.jpg",
+            "title":"ONION",
+            "price":59,
+            "ratings":4.8,
+            "quantity": 1,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1007,
+            "image":"https://www.dominos.co.in//files/items/golden_corn_veg.jpg",
+            "title":"GOLDEN CORN",
+            "price":79,
+            "ratings":4.8,
+            "quantity":1 ,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1008,
+            "image":"https://www.dominos.co.in//files/items/cheese_and_tomato.png",
+            "title":"CHEESE N TOMATO",
+            "price":305,
+            "ratings":4.9,
+            "quantity": 1,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1009,
+            "image":"https://www.dominos.co.in/files/items/PrimeLoadedL.jpg",
+            "title":"CHEESE TOMATO N OLIVES",
+            "price":360,
+            "ratings":4.9,
+            "quantity": 1,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1010,
+            "image":"https://5.imimg.com/data5/KI/LC/GLADMIN-15621787/margerita-pizza-500x500.png",
+            "title":"MARGERITA",
+            "price":329,
+            "ratings":4.8,
+            "quantity": 1,
+            "category": "pizza-mania"         
+        },
+        {
+            "id":1011,
+            "image":"https://5.imimg.com/data5/IN/OA/GLADMIN-15621787/cheese-onion-tomato-pizza-500x500.png",
+            "title":"CHEESE-ONION-TOMATO",
+            "price":356,
+            "ratings":4.7,
+            "quantity": 1,  
+            "category": "pizza-mania"       
+        },
+        {
+            "id":1012,
+            "image":"https://5.imimg.com/data5/HA/WD/GLADMIN-15621787/exotica-pizza-500x500.png",
+            "title":"EXOTICA PIZZA",
+            "price":449,
+            "ratings":4.6,
+            "quantity": 1,  
+            "category": "pizza-mania"  
+        },
+        {
+            "id":1013,
+            "image":"https://www.dominos.co.in/files/items/LoadedC.jpg",
+            "title":"CHEESE CRUNCH",
+            "price":412,
+            "ratings":4.8,
+            "quantity":1 , 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1014,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/PepperBarbequeChickenC-1.jpg",
+            "title":"PEPPER BARBEQUE CHICKEN",
+            "price":442,
+            "ratings":4.8,
+            "quantity": 1, 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1015,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/424X431pix_Fresh_Veggie-01.jpg",
+            "title":"FRESH VEGGIE",
+            "price":110,
+            "ratings":4.8,
+            "quantity":1 ,  
+            "category": "pizza-mania"       
+        },
+        {
+            "id":1016,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/PrimeLoadedC.jpg",
+            "title":"VEG LOADED PIZZA",
+            "price":250,
+            "ratings":4.9,
+            "quantity": 1, 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1017,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/PaneerMakhaniC.jpg",
+            "title":"PANEER MAKHANI",
+            "price":260,
+            "ratings":5.0,
+            "quantity":1 , 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1018,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/mexican_green_wave.jpg",
+            "title":"MEXICAN GREEN WAVE",
+            "price":260,
+            "ratings":4.8,
+            "quantity":1 , 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1019,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/LoadedL.jpg",
+            "title":"NONVEG LOADED PIZZA",
+            "price":490,
+            "ratings":4.8,
+            "quantity":1 , 
+            "category": "pizza-mania"        
+        },
+        {
+            "id":1020,
+            "image":"https://feenix.co.in/wp-content/uploads/2022/07/peppy_paneer.jpg",
+            "title":"PEPPY PANEER",
+            "price":260,
+            "ratings":4.8,
+            "quantity": 1,  
+            "category": "pizza-mania"       
+        }  
     ]
+
+
 }
