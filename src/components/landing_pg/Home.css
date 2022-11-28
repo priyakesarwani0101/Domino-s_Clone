@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0.5em 1em 1.5em ;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px 0 #0d4888 ;
+}
+
+.head-links {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-weight: 600;
+    color: rgb(94, 87, 87);
+}
+
+#downloadBtn {
+    width: 148px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #f3223b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none ;
+    color: white;
+    font-weight: 500;
+}
