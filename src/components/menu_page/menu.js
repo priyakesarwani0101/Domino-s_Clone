@@ -10,7 +10,7 @@ const Menu = () => {
             alt="banner"
             />
         </div>
-        <h1>DOMINO'S MENU</h1>
+        <h1 style={{color:"#d41b35"}}>DOMINO'S MENU</h1>
       <div className="menuPage">
         <div className="menu">
            
