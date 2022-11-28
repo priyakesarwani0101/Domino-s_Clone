@@ -1,0 +1,11 @@
+.sidebar{
+    position: fixed;
+    /* border: 10px solid teal; */
+    left: 0;
+    top:0;
+    width: 25%;
+    height:600px;
+    background-color: yellowgreen;
+    z-index:10;
+    transition: 0.5s;
+}

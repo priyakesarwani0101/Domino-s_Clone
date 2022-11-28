@@ -1,0 +1,11 @@
+.navbar_cart{
+    position: fixed;
+    /* border: 10px solid teal; */
+    right: 0;
+    top:0;
+    width: 25%;
+    height:600px;
+    background-color: rgb(211, 114, 23);
+    z-index:10;
+    transition: 0.5s;
+}
