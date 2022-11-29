@@ -772,7 +772,7 @@
         "price" : 450,
         "ratings" : 4.7,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 702 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(13).png",
@@ -780,7 +780,7 @@
         "price" : 609,
         "ratings" : 4.6,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 703 ,
         "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png" ,
@@ -788,7 +788,7 @@
         "price" : 609,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 704 ,
         "image" : "https://www.dominos.co.in//files/items/Pepper_Barbeque_&_Onion.jpg" ,
@@ -796,7 +796,7 @@
         "price" : 385,
         "ratings" : 4.5,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 705 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(15).png" ,
@@ -804,7 +804,7 @@
         "price" : 455,
         "ratings" : 4.7,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 706 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(10).png" ,
@@ -812,7 +812,7 @@
         "price" : 559,
         "ratings" : 4.6,
         "quantity" : 1 ,
-        "category":1 
+        "category":"non-veg-pizza" 
         },{
         "id" : 707 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png" ,
@@ -820,7 +820,7 @@
         "price" : 295,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza"
         },{
         "id" : 708 ,
         "img" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(20).png" ,
@@ -828,7 +828,7 @@
         "price" : 365,
         "rating" : 4.5,
         "quatity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 709 ,
         "image" : "https://www.dominos.co.in//files/items/CreamyTomatoPPVG.jpg" ,
@@ -836,7 +836,7 @@
         "price" : 509,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 710 ,
         "image" : "https://www.dominos.co.in//files/items/updated_keema_do_pyaza.webp" ,
@@ -844,7 +844,7 @@
         "price" : 455,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza" 
         },{
         "id" : 711 ,
         "image" : "https://www.dominos.co.in//files/items/MoroccanSpicePPNV_N.jpg" ,
@@ -852,7 +852,7 @@
         "price" : 509,
         "ratings" : 4.5,
         "quantity" : 1 ,
-        "category" : 1 
+        "category" : "non-veg-pizza"
         }
         ]
 
