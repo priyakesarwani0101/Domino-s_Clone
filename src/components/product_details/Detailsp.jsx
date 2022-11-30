@@ -1,4 +1,5 @@
 import React from 'react'
+import UncontrolledExample from './Carousel'
 import {Button,Image,Heading,Text,Textarea,DrawerFooter,Select,DrawerCloseButton,InputRightAddon,InputLeftAddon,InputGroup,Input,Box,FormLabel,Drawer,DrawerHeader,DrawerBody,DrawerOverlay,useDisclosure,Stack,DrawerContent, localStorageManager} from '@chakra-ui/react'
 // import Carousel from './Carousel'
 //  const details = () => {
@@ -48,6 +49,9 @@ function Detailsp() {
                        <Box> <Heading size='s' >Large</Heading>
                         <Text>Serves 4</Text></Box></Box>
                     </Box>
+                </Box>
+                <Box>
+                    <UncontrolledExample/>
                 </Box>
                 {/* <Carousel/> */}
 
