@@ -378,7 +378,7 @@
     }
     ],
 
-    "pizza-mania":[
+    "pizza_mania":[
         {
             "id":1001,
             "image":"https://www.dominos.co.in//files/items/pizza_mania_tomato.png",
@@ -386,7 +386,7 @@
             "price":59,
             "ratings":4.5,
             "quantity": 1,
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         },
         {
             "id":1002,
@@ -395,7 +395,7 @@
             "price":119,
             "ratings":4.4,
             "quantity":1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1003,
@@ -404,7 +404,7 @@
             "price":95,
             "ratings":4.5,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1004,
@@ -413,7 +413,7 @@
             "price":89,
             "ratings":4.3,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1005,
@@ -422,7 +422,7 @@
             "price":69,
             "ratings":4.4,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1006,
@@ -431,7 +431,7 @@
             "price":59,
             "ratings":4.8,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1007,
@@ -440,7 +440,7 @@
             "price":79,
             "ratings":4.8,
             "quantity":1 ,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1008,
@@ -449,7 +449,7 @@
             "price":305,
             "ratings":4.9,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1009,
@@ -458,7 +458,7 @@
             "price":360,
             "ratings":4.9,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1010,
@@ -467,7 +467,7 @@
             "price":329,
             "ratings":4.8,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1011,
@@ -476,7 +476,7 @@
             "price":356,
             "ratings":4.7,
             "quantity": 1,  
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         },
         {
             "id":1012,
@@ -485,7 +485,7 @@
             "price":449,
             "ratings":4.6,
             "quantity": 1,  
-            "category": "pizza-mania"  
+            "category": "pizza_mania"  
         },
         {
             "id":1013,
@@ -494,7 +494,7 @@
             "price":412,
             "ratings":4.8,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1014,
@@ -503,7 +503,7 @@
             "price":442,
             "ratings":4.8,
             "quantity": 1, 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1015,
@@ -512,7 +512,7 @@
             "price":110,
             "ratings":4.8,
             "quantity":1 ,  
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         },
         {
             "id":1016,
@@ -521,7 +521,7 @@
             "price":250,
             "ratings":4.9,
             "quantity": 1, 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1017,
@@ -530,7 +530,7 @@
             "price":260,
             "ratings":5.0,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1018,
@@ -539,7 +539,7 @@
             "price":260,
             "ratings":4.8,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1019,
@@ -548,7 +548,7 @@
             "price":490,
             "ratings":4.8,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1020,
@@ -557,11 +557,11 @@
             "price":260,
             "ratings":4.8,
             "quantity": 1,  
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         }  
     ],
 
-    "sides&beverages": [
+    "sides_and_beverages": [
         {
             "id": 401,
             "category": "Sides & Beverages",
@@ -764,7 +764,7 @@
         }
     ],
 
-    "non-veg-pizza" : [
+    "non_veg_pizza" : [
          {
         "id" : 701 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(14).png" ,
@@ -772,7 +772,7 @@
         "price" : 450,
         "ratings" : 4.7,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 702 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(13).png",
@@ -780,7 +780,7 @@
         "price" : 609,
         "ratings" : 4.6,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 703 ,
         "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png" ,
@@ -788,7 +788,7 @@
         "price" : 609,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 704 ,
         "image" : "https://www.dominos.co.in//files/items/Pepper_Barbeque_&_Onion.jpg" ,
@@ -796,7 +796,7 @@
         "price" : 385,
         "ratings" : 4.5,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 705 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(15).png" ,
@@ -804,7 +804,7 @@
         "price" : 455,
         "ratings" : 4.7,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 706 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(10).png" ,
@@ -812,7 +812,7 @@
         "price" : 559,
         "ratings" : 4.6,
         "quantity" : 1 ,
-        "category":"non-veg-pizza" 
+        "category":"non_veg_pizza" 
         },{
         "id" : 707 ,
         "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png" ,
@@ -820,7 +820,7 @@
         "price" : 295,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza"
+        "category" : "non_veg_pizza"
         },{
         "id" : 708 ,
         "img" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(20).png" ,
@@ -828,7 +828,7 @@
         "price" : 365,
         "rating" : 4.5,
         "quatity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 709 ,
         "image" : "https://www.dominos.co.in//files/items/CreamyTomatoPPVG.jpg" ,
@@ -836,7 +836,7 @@
         "price" : 509,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 710 ,
         "image" : "https://www.dominos.co.in//files/items/updated_keema_do_pyaza.webp" ,
@@ -844,7 +844,7 @@
         "price" : 455,
         "ratings" : 4.8,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza" 
+        "category" : "non_veg_pizza" 
         },{
         "id" : 711 ,
         "image" : "https://www.dominos.co.in//files/items/MoroccanSpicePPNV_N.jpg" ,
@@ -852,7 +852,7 @@
         "price" : 509,
         "ratings" : 4.5,
         "quantity" : 1 ,
-        "category" : "non-veg-pizza"
+        "category" : "non_veg_pizza"
         }
         ]
 
