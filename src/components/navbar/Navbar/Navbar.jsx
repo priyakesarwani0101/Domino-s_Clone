@@ -6,12 +6,22 @@ import './Style/navbar.css'
 import menubar from '../Image/white_menu.png'
 import { useContext } from 'react'
 import { navContext } from '../Context/NavbarContext'
+
 const Navbar = () => {
   const {handleSidebar}=useContext(navContext);
   const {handleCart}=useContext(navContext);
   const {showlogin}=useContext(navContext);
   const {handleLogin}=useContext(navContext);
+  const {showcart}=useContext(navContext);
   const {handleSearch}=useContext(navContext);
+  const handleshowCart =()=>{
+    if(showcart){
+      handleCart(false);
+    }
+    else{
+      handleCart(true);
+    }
+  }
   return (
     <div className='navbar'>
       <div onClick={()=>handleSidebar(true)}>
@@ -45,7 +55,7 @@ const Navbar = () => {
       <div >
       <div>
       <i class="fa-solid fa-magnifying-glass" onClick={()=>handleSearch(true)}></i></div>
-      <div ><i class="fa-solid fa-cart-shopping"   onClick={()=>handleCart(true)}></i></div>
+      <div ><i class="fa-solid fa-cart-shopping"   onClick={handleshowCart}></i></div>
     </div>
     </div>
   )

@@ -20,7 +20,7 @@ const Sidebar = () => {
     <>
       <div
         className="sidebar"
-        style={showside ? { width: "25%" } : { width: "0%" }}
+        style={showside ? { width: "350px" } : { width: "0%" }}
       >
         <div>   
           <img src={track} alt="" />
