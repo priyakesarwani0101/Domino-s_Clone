@@ -1,10 +1,18 @@
+body
+{
+margin:0px;
+padding:0px;
+width:100%;
+}
 .lower_nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: white;
     background-color: rgb(11,99,156) ;
     text-transform: uppercase;
     padding: 5px;
+    width: 100%;
 }
 .lower_nav>div{
    cursor: pointer;
