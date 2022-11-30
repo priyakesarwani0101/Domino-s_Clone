@@ -4,7 +4,7 @@
     padding: 0.5em 0.5em 1em 1.5em ;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 4px 15px 0 #0d4888 ;
+    box-shadow: 0 4px 15px 0 #708aa5 ;
 }
 
 .head-links {
@@ -14,7 +14,7 @@
     justify-content: space-evenly;
     list-style-type: none;
     font-weight: 600;
-    color: rgb(94, 87, 87);
+    color: #708aa5; 
 }
 
 #downloadBtn {
@@ -29,4 +29,76 @@
     text-decoration: none ;
     color: white;
     font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+
+.carousel-title {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.31;
+    color: #708aa5;
+    text-transform: none;
+    font-family: "proximaBold";
+    
+}
+#explore-items{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.explore-card img {
+    width: 60px;
+}
+
+.explore-card h4 {
+    font-weight: bold;
+}
+
+.explore-card p {
+    font-size: 18px;
+}
+
+.explore-card h5 {
+    font-weight: bolder;
+    color: red;
+}
+
+.explore-card{
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+.download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    background-color: #f2f5fc;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.lower-btn button{
+    width: 100px;
+    padding: 5px 10px ;
+    margin: 10px;
 }
