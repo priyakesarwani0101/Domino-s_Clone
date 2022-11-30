@@ -1,7 +1,27 @@
-let initialData = [];
 
+var initialData = {
+   
+   domino_data:{}
 
-let ProductReducer = (data,action)=>{
+}
+
+const ProductReducer = (storeData=initialData,action)=>{
+
+    switch(action.type) {
+       case "domino_data" : {
+        return {
+            ...storeData,
+           domino_data: action.payload
+        }
+       }
+
+       default : 
+       return storeData;
+
+    }
+    
+     
+    
   
 }
-export default ProductReducer
+export default ProductReducer;
