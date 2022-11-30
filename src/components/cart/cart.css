@@ -1,0 +1,169 @@
+.cartContainer_pk{
+    background-color: rgb(242, 242, 242);
+    font-family: proxima-nova, sans-serif;
+  }
+  
+  .cartContainer-pk>div{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cartPage-leftDiv-pk{
+    width: 65%;
+    border: 1px solid teal;
+  }
+  
+  .cartPage-left-topDiv-pk{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0px 1.5rem 0.5rem;
+    /* align-self: center; */
+  }
+  .cartPage-left-topDiv-pk>div{
+    margin-right: 15px;
+  }
+  .cartItem-container-pk{
+    display: flex;
+    padding: 5px;
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    /* box-shadow: rgb(0 0 0 / 12%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 2px 4px 0px; */
+    margin-top: 1.5rem;
+    justify-content: space-between;
+  
+  }
+  .cartItem-image-pk{
+    border: 1px solid greenyellow;
+    width: 6.6rem;
+    height: 6.6rem;
+    position: relative;
+    margin: 1rem;
+  }
+  .cartItem-image-pk>img{
+    width: 100%;
+    border-radius: 3px;
+  }
+  .cartItem-desc-pk{
+    width: 80%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .cartItem-desc-pk>div:first-child{
+    margin-top: -10px;
+  }
+  .cartItem-price-buttons-pk{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid orange; */
+    margin-top: 10px;
+  }
+  .cartItem-buttons-pk{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  
+  
+  
+  .cartItem-buttons-pk>div:first-child{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/delete_icon.svg);
+    background-size: 100% 100%;
+    width: 1.5rem;
+    height: 0.9rem;
+  }
+  .cartItem-buttons-pk>span{
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    width: 20px;
+    text-align: center;
+  }
+  .cartItem-buttons-pk>div:last-child{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/plus.svg);
+    background-size: 100% 100%;
+    width: 1.5rem;
+    height: 0.9rem;
+  }
+  .cursor-pointer-pk{
+    cursor: pointer;
+  }
+  
+  
+  
+  .cartPage-rightDiv-pk{
+    width: 20%;
+    border: 1px solid teal;
+  }
+  .address-container-pk{
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgb(117, 63, 63);
+  }
+  .cartPage-right-topDiv-pk{
+    margin: 1.5rem 0px 1.5rem 0.5rem;
+  }
+  .select-offer-div-pk{
+    width: 250px;
+    height: 100px;
+    border: 1px solid rgb(117, 63, 63);
+  }
+  .price-details-div-pk{
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgb(117, 63, 63);
+  }
+  
+  .item-desc-pk{
+    font-size: 0.9rem;
+      color: rgb(100, 129, 143);
+      padding: 0.5rem 0px;
+      width: 50%;
+      display: block;
+  }
+  
+  .cart-item-title-pk{
+    margin-bottom: -5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+  }
+  
+  .address-container-pk{
+    display: flex;
+  }
+  .adrs-icon-div-pk{
+    width: 15%;
+    float: left;
+    text-align: -webkit-center;
+  }
+  .adrs-icon-div-pk>div{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/location_pin.png);
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    min-width: 1rem;
+    width: 1rem;
+    height: 1.5rem;
+    background-size: 1rem;
+  }
+  .adrs-icon-div-pk{
+    width: 10%;
+    float: left;
+    text-align: -webkit-center;
+  }
+  .adrs-wrpr-div-pk{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
