@@ -1,0 +1,23 @@
+.hd-img{
+    margin: 10.5rem 0.75rem 2.188rem 0.938rem;
+    width: 80%;
+}
+
+.hd-ing_sbtxt{
+    display: flex;
+    margin-left: 0.75rem;
+}
+
+.code{
+    position: relative;
+    width: 30px;
+}
+.inputMobile{
+    display: flex;
+}
+
+#submit-btn {
+    border: 1px solid rgb(151, 140, 140);
+    padding: 5px 10px;
+    margin-top: 20px;
+}
