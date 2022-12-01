@@ -1,10 +1,18 @@
+import { Alert } from 'bootstrap';
 import React, { useState } from 'react'
 import "./Login.css"
 
 export default function login() {
+    
+    // let [otp,setOtp] = useState() ;
 
-    const check = ()=>{
-        
+    const generateOTP = ()=>{
+        let digit = '0123456789' ;
+        let OTP = '' ;
+        for(let i=0;i<4;i++){
+            OTP += digit[Math.floor(Math.random()*10)] ;
+        }
+        alert(OTP) ;
     }
     
 
@@ -54,8 +62,9 @@ export default function login() {
                     </div>
                 </div>
                 <div>
-                    <button onClick={check} id='submit-btn'>submit</button>
+                    <button onClick={generateOTP} id='submit-btn'>submit</button>
                 </div>
+
             </div>
 
         </div>
