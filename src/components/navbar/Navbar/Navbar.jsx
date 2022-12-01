@@ -1,7 +1,9 @@
-import logo from'../Image/domino_logo.png';
+// import logo from'../../Image/domino_logo.png'
+import logo from '../Image/domino_logo.png'
 import React from 'react'
 import './Style/navbar.css'
-import menubar from '../Image/menubar1.png'
+// import menubar from "../../Image/white_menu.png"
+import menubar from '../Image/white_menu.png'
 import { useContext } from 'react'
 import { navContext } from '../Context/NavbarContext'
 const Navbar = () => {
@@ -9,6 +11,7 @@ const Navbar = () => {
   const {handleCart}=useContext(navContext);
   const {showlogin}=useContext(navContext);
   const {handleLogin}=useContext(navContext);
+  const {handleSearch}=useContext(navContext);
   return (
     <div className='navbar'>
       <div onClick={()=>handleSidebar(true)}>
@@ -24,6 +27,7 @@ const Navbar = () => {
         <div>corporate enquiry</div>
         <div>contact</div>
       </div>
+      
       <div className='navbar_login_container'>
   <div><i class="fa-solid fa-user"></i></div>
   <div>
@@ -37,7 +41,12 @@ const Navbar = () => {
     }
   </div>
       </div>
+      {/* <i class="fa-solid fa-magnifying-glass"></i> */}
+      <div >
+      <div>
+      <i class="fa-solid fa-magnifying-glass" onClick={()=>handleSearch(true)}></i></div>
       <div ><i class="fa-solid fa-cart-shopping"   onClick={()=>handleCart(true)}></i></div>
+    </div>
     </div>
   )
 }

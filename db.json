@@ -1,4 +1,6 @@
 {
+    "domino_data":
+{
     "veg_pizza":[
         {
             "id":1,
@@ -378,7 +380,7 @@
     }
     ],
 
-    "pizza-mania":[
+    "pizza_mania":[
         {
             "id":1001,
             "image":"https://www.dominos.co.in//files/items/pizza_mania_tomato.png",
@@ -386,7 +388,7 @@
             "price":59,
             "ratings":4.5,
             "quantity": 1,
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         },
         {
             "id":1002,
@@ -395,7 +397,7 @@
             "price":119,
             "ratings":4.4,
             "quantity":1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1003,
@@ -404,7 +406,7 @@
             "price":95,
             "ratings":4.5,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1004,
@@ -413,7 +415,7 @@
             "price":89,
             "ratings":4.3,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1005,
@@ -422,7 +424,7 @@
             "price":69,
             "ratings":4.4,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1006,
@@ -431,7 +433,7 @@
             "price":59,
             "ratings":4.8,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1007,
@@ -440,7 +442,7 @@
             "price":79,
             "ratings":4.8,
             "quantity":1 ,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1008,
@@ -449,7 +451,7 @@
             "price":305,
             "ratings":4.9,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1009,
@@ -458,7 +460,7 @@
             "price":360,
             "ratings":4.9,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1010,
@@ -467,7 +469,7 @@
             "price":329,
             "ratings":4.8,
             "quantity": 1,
-            "category": "pizza-mania"         
+            "category": "pizza_mania"         
         },
         {
             "id":1011,
@@ -476,7 +478,7 @@
             "price":356,
             "ratings":4.7,
             "quantity": 1,  
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         },
         {
             "id":1012,
@@ -485,7 +487,7 @@
             "price":449,
             "ratings":4.6,
             "quantity": 1,  
-            "category": "pizza-mania"  
+            "category": "pizza_mania"  
         },
         {
             "id":1013,
@@ -494,7 +496,7 @@
             "price":412,
             "ratings":4.8,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1014,
@@ -503,7 +505,7 @@
             "price":442,
             "ratings":4.8,
             "quantity": 1, 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1015,
@@ -512,7 +514,7 @@
             "price":110,
             "ratings":4.8,
             "quantity":1 ,  
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         },
         {
             "id":1016,
@@ -521,7 +523,7 @@
             "price":250,
             "ratings":4.9,
             "quantity": 1, 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1017,
@@ -530,7 +532,7 @@
             "price":260,
             "ratings":5.0,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1018,
@@ -539,7 +541,7 @@
             "price":260,
             "ratings":4.8,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1019,
@@ -548,7 +550,7 @@
             "price":490,
             "ratings":4.8,
             "quantity":1 , 
-            "category": "pizza-mania"        
+            "category": "pizza_mania"        
         },
         {
             "id":1020,
@@ -557,9 +559,307 @@
             "price":260,
             "ratings":4.8,
             "quantity": 1,  
-            "category": "pizza-mania"       
+            "category": "pizza_mania"       
         }  
-    ]
+    ],
 
 
+    "sides_beverages": [
+        {
+            "id": 401,
+            "category": "sides_beverages",
+            "title": "GARLIC BREADSTICKS",
+            "description": "The endearing tang of garlic in breadstics baked to perfection",
+            "image": "https://www.dominos.co.in/files/items/garlic-bread.webp",
+            "price": 95,
+            "quantity": 1,
+            "ratings": 3
+        },
+        {
+            "id": 402,
+            "category": "sides_beverages",
+            "title": "STUFFED GARLIC BREAD",
+            "description": "Freshly Baked Garlic Bread stuffed with mozzarella cheese, sweet corns & tangy and spicy jalapeÃ±os",
+            "image": "https://www.dominos.co.in/files/items/stuffed-garlic-breadstick_1346070564.webp",
+            "price": 139,
+            "quantity": 1,
+            "ratings": 3.3
+        },
+        {
+            "id": 403,
+            "category": "sides_beverages",
+            "title": "CHICKEN PEPPERONI STUFFED GARLIC BREAD",
+            "description": "Freshly Baked Garlic Bread stuffed with Delectable Chicken Pepperoni, Cheese and sprinkled with Basil Parsley",
+            "image": "https://www.dominos.co.in/files/items/BRD0031.webp",
+            "price": 175,
+            "quantity": 1,
+            "ratings": 3.5
+        },
+        {
+            "id": 404,
+            "category": "sides_beverages",
+            "title": "PANEER TIKKA STUFFED GARLIC BREAD",
+            "description": "Freshly Baked Stuffed Garlic Bread with Cheese, Onion and Paneer Tikka fillings. Comes with a dash of Basil Parsley Sprinkle",
+            "image": "https://www.dominos.co.in/files/items/BRD0030.webp",
+            "price": 175,
+            "quantity": 1,
+            "ratings": 3.5
+        },
+        {
+            "id": 405,
+            "category": "sides_beverages",
+            "title": "CHEESE JALAPENO DIP",
+            "description": "A soft creamy cheese dip spiced with jalapeno",
+            "image": "https://www.dominos.co.in/files/items/_thumb_17451.png",
+            "price": 139,
+            "quantity": 1,
+            "ratings": 3.9
+        },
+        {
+            "id": 406,
+            "category": "sides_beverages",
+            "title": "CHEESE DIP",
+            "description": "A dreamy creamy cheese dip to add that extra tang to your snack",
+            "image": "https://www.dominos.co.in/files/items/_thumb_17450.png",
+            "price": 25,
+            "quantity": 1,
+            "ratings": 3.4
+        },
+        {
+            "id": 407,
+            "category": "sides_beverages",
+            "title": "LAVA CAKE",
+            "description": "Filled with delicious molten chocolate inside",
+            "image": "https://www.dominos.co.in/files/items/choco-lava-cake-771.jpg",
+            "price": 109,
+            "quantity": 1,
+            "ratings": 4.0
+        },
+        {
+            "id": 408,
+            "category": "sides_beverages",
+            "title": "BUTTERSCOTCH MOUSSE CAKE",
+            "description": "A Creamy & Chocolaty indulgence with layers of rich, fluffy Butterscotch Cream and delicious Dark Chocolate Cake, topped with crunchy Dark Chocolate morsels - for a perfect dessert treat!",
+            "image": "",
+            "price": 109,
+            "quantity": 1,
+            "ratings": 3.8
+        },
+        {
+            "id": 409,
+            "category": "sides_beverages",
+            "title": "RED VELVET LAVA CAKE",
+            "description": "A truly indulgent experience with sweet and rich red velvet cake on a creamy cheese flavoured base to give a burst of flavour in",
+            "image": "",
+            "price": 145,
+            "quantity": 1,
+            "ratings": 3.9
+        },
+        {
+            "id": 410,
+            "category": "sides_beverages",
+            "title": "TACO MEXICANA VEG",
+            "description": "A crispy flaky wrap filled with Mexican Arancini Bean Patty rolled over a creamy Harissa Sauce",
+            "image": "https://www.dominos.co.in/files/items/Main_Menu-VG.jpg",
+            "price": 145,
+            "quantity": 1,
+            "ratings": 4.0
+        },
+        {
+            "id": 411,
+            "category": "sides_beverages",
+            "title": "TACO MEXICANA NON VEG",
+            "description": "A crispy flaky wrap filled with Hot and Smoky Chicken Patty rolled over a creamy Harissa Sauce",
+            "image": "https://www.dominos.co.in/files/items/Main_Menu-NVG.jpg",
+            "price": 175,
+            "quantity": 1,
+            "ratings": 4.1
+        },
+        {
+            "id": 412,
+            "category": "sides_beverages",
+            "title": "VEG PARCEL",
+            "description": "",
+            "image": "https://www.dominos.co.in/files/items/150135_AHA_Menu_main_1.jpg",
+            "price": 45,
+            "quantity": 1,
+            "ratings": 3.0
+        },
+        {
+            "id": 413,
+            "category": "sides_beverages",
+            "title": "CHICKEN PARCEL",
+            "description": "",
+            "image": "https://www.dominos.co.in/files/items/150135_Aha_Non_Veg_439x307-01.jpg",
+            "price": 55,
+            "quantity": 1,
+            "ratings": 3.8
+        },
+        {
+            "id": 414,
+            "category": "sides_beverages",
+            "title": "CRUNCHY STRIPS",
+            "description": "Oven baked wheat thin crips with peri peri seasoning with a cheesy dip",
+            "image": "https://www.dominos.co.in/files/items/crunchy_strips.png",
+            "price": 75,
+            "quantity": 1,
+            "ratings": 3.3
+        },
+        {
+            "id": 415,
+            "category": "sides_beverages",
+            "title": "POTATO CHEESE SHOTS",
+            "description": "Crisp and golden outside,flavorful burst of cheese, potato & spice inside",
+            "image": "https://www.dominos.co.in/files/items/potato_cheese_shots.png",
+            "price": 85,
+            "quantity": 1,
+            "ratings": 3.7
+        },
+        {
+            "id": 416,
+            "category": "sides_beverages",
+            "title": "TACO MEXICANA-VEG(SINGLE)",
+            "description": "Truly irresistible! Crispy taco with a decicious veg patty & creamy sauce",
+            "image": "https://www.dominos.co.in/files/items/taco.png",
+            "price": 85,
+            "quantity": 1,
+            "ratings": 3.7
+        },
+        {
+            "id": 417,
+            "category": "sides_beverages",
+            "title": "CRINKLE FRIES",
+            "description": "Crispy wavy masala coated fries served with a spicy tomato chilli sauce",
+            "image": "https://www.dominos.co.in/files/items/crinkle_fries.png",
+            "price": 75,
+            "quantity": 1,
+            "ratings": 3.2
+        },
+        {
+            "id": 418,
+            "category": "sides_beverages",
+            "title": "BROWNIE FANTASY",
+            "description": "Sweet Temptation! Hot Chocolate Brownie drizzled with chocolate fudge sauce",
+            "image": "https://www.dominos.co.in/files/items/brownie_fantasy.png",
+            "price": 59,
+            "quantity": 1,
+            "ratings": 4.0
+        },
+        {
+            "id": 419,
+            "category": "sides_beverages",
+            "title": "Pepsi (500ml)",
+            "description": "",
+            "image": "https://images.dominos.co.in/cart/BEV0119_1.jpg",
+            "price": 60,
+            "quantity": 1,
+            "ratings": 4.2
+        },
+        {
+            "id": 420,
+            "category": "sides_beverages",
+            "title": "B Natural Mixed Fruit from Himalayas(300ml)",
+            "description": "",
+            "image": "https://images.dominos.co.in/cart/MIXEDFRUIT.jpg",
+            "price": 70,
+            "quantity": 1,
+            "ratings": 4.0
+        }
+    ],
+
+    "non_veg_pizza" : [
+         {
+        "id" : 701 ,
+        "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(14).png" ,
+        "title" : "Chicken Golden Delight" ,
+        "price" : 450,
+        "ratings" : 4.7,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 702 ,
+        "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(13).png",
+        "title" : "Non Veg Supreme" ,
+        "price" : 609,
+        "ratings" : 4.6,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 703 ,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png" ,
+        "title" : "Chicken Dominator",
+        "price" : 609,
+        "ratings" : 4.8,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 704 ,
+        "image" : "https://www.dominos.co.in//files/items/Pepper_Barbeque_&_Onion.jpg" ,
+        "title" : "PEPPER BARBECUE & ONION" ,
+        "price" : 385,
+        "ratings" : 4.5,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 705 ,
+        "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(15).png" ,
+        "title" : "PEPPER BARBECUE CHICKEN" ,
+        "price" : 455,
+        "ratings" : 4.7,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 706 ,
+        "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(10).png" ,
+        "title" : "CHICKEN FIESTA" ,
+        "price" : 559,
+        "ratings" : 4.6,
+        "quantity" : 1 ,
+        "category":"non_veg_pizza" 
+        },{
+        "id" : 707 ,
+        "image" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png" ,
+        "title" : "Indi Chicken Tikka" ,
+        "price" : 295,
+        "ratings" : 4.8,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza"
+        },{
+        "id" : 708 ,
+        "img" : "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(20).png" ,
+        "title" : "Chicken Pepperoni" ,
+        "price" : 365,
+        "rating" : 4.5,
+        "quatity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 709 ,
+        "image" : "https://www.dominos.co.in//files/items/CreamyTomatoPPVG.jpg" ,
+        "title" : "Creamy Tomato Pasta Pizza - Non Veg" ,
+        "price" : 509,
+        "ratings" : 4.8,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 710 ,
+        "image" : "https://www.dominos.co.in//files/items/updated_keema_do_pyaza.webp" ,
+        "title" : "Keema Do Pyaza" ,
+        "price" : 455,
+        "ratings" : 4.8,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza" 
+        },{
+        "id" : 711 ,
+        "image" : "https://www.dominos.co.in//files/items/MoroccanSpicePPNV_N.jpg" ,
+        "title" : "Moroccan Spice Pasta Pizza - Non Veg" ,
+        "price" : 509,
+        "ratings" : 4.5,
+        "quantity" : 1 ,
+        "category" : "non_veg_pizza"
+        }
+        ]
+
+
+
+}
 }
