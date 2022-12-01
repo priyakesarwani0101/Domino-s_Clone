@@ -80,55 +80,52 @@ export default function Home() {
       <div id='explore-items'>
 
       <div className='explore-card'> 
-        <div>
+
           <img src='https://www.dominos.co.in/assets/menu.png' alt='menu'/>
-        </div>
-        <div>
-          <h4>OUR MENU</h4>
+        
+          <h2>OUR MENU</h2>
           <p>Explore our range of delicious Pizzas, delivered in 30 minutes!</p>
-        </div>
-        <div>
+          <span id='card-span'></span>
+       
           <h5>DISCOVER PIZZA</h5>
-        </div>
+
       </div>
 
       <div className='explore-card'> 
-        <div>
+        
           <img src='https://www.dominos.co.in/assets/store.png' alt='store'/>
-        </div>
-        <div>
-          <h4>NEARBY STORE</h4>
+       
+          <h2>NEARBY STORE</h2>
           <p>find a Domino's Pizza restaurant near you</p>
-        </div>
-        <div>
+          <span id='card-span'></span>
+        
           <h5>FIND DOMINO'S STORE</h5>
-        </div>
+        
       </div>
 
       <div className='explore-card'> 
-        <div>
+      
           <img src='https://www.dominos.co.in/assets/birthday.png' alt='birthday'/>
-        </div>
-        <div>
-          <h4>BIRTHDAY PARTY</h4>
+      
+          <h2>BIRTHDAY PARTY</h2>
           <p>Celebrate the joy of birthday with Fresh and Hot pizza</p>
-        </div>
-        <div>
+          <span id='card-span'></span>
+          
+        
           <h5>BOOK NOW</h5>
-        </div>
+      
       </div>
 
       <div className='explore-card'> 
-        <div>
+        
           <img src='https://www.dominos.co.in/assets/catering.png' alt='catering'/>
-        </div>
-        <div>
-          <h4>CATERING</h4>
+      
+          <h2>CATERING</h2>
           <p>Live Domino's Kitchen for wedding / corporate events </p>
-        </div>
-        <div>
+          <span id='card-span'></span>
+       
           <h5>BOOK NOW</h5>
-        </div>
+        
       </div>
 
       </div>
@@ -182,6 +179,30 @@ export default function Home() {
 
       <div className='lower-btn'>
         <button>Menu</button>
+        <button>Veg Pizza</button>
+        <button>Chicken Pizza</button>
+        <button>Pasta</button>
+        <button>Pizza Crust</button>
+        <button>Beverages</button>
+        <button>Pizza Mania</button>
+        <button>Burger Pizza</button>
+        <button>Farm House Pizza</button>
+        <button>Veg Margherita Pizza</button>
+        <button>Veg Corn Pizza</button>
+        <button>Double Cheeze Margherita pizza</button>
+        <button>Paneer Makhani Pizza</button>
+        <button>Choco Lava Cake</button>
+        <button>Stuffed Garlic Bread</button>
+        <button>Roasted Chicken Wings Peri Peri</button>
+        <button>Garlic bread</button>
+        <button>Paneer Zingy Parcel</button>
+        <button>Fresh Pan Pizza</button>
+        <button>New Hand Tossed Pizza</button>
+        <button>Classic Hand Tossed Pizza</button>
+        <button>Golden Corn Pizza</button>
+        <button>Extra Cheeze Pizza</button>
+        <button>Wednesday Offer buy-1 get-1</button>
+        <button>Paneer Pizza</button>
         
       </div>
 
