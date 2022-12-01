@@ -3,10 +3,24 @@
     /* border: 10px solid teal; */
     top: 50px;
     right: 0;
-    width: 300px;
-    height:600px;
-    background-color: rgb(211, 114, 23);
+    width: 400px;
+    height:610px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* background-color: white; */
     z-index:9999;
     transition: 0.5s;
     color: black;
+    background-color: rgb(193,193,193);
+   
 }
+.cart_div_scroll::-webkit-scrollbar {
+    width: 5px;
+    /* color: red; */
+   
+  }
+  .cart_div_scroll::-webkit-scrollbar-thumb {
+    background: rgb(19 126 233);
+    border-radius: 10px;
+  }
+ 
+
