@@ -8,7 +8,10 @@ const Flip_cart_card=({props})=>{
     const [backrotate,setbackrotate]=useState(false);
     const dispatch=useDispatch();
     const handleRemoveCart=()=>{
+        setrotate(false);
+                setbackrotate(true);
         dispatch(deletecart(props.id));
+       
     }
     return(
         <div>
@@ -41,18 +44,23 @@ const Flip_cart_card=({props})=>{
              <button onClick={()=>{
                 setrotate(true);
                 setbackrotate(false);
-            }}><i class="fa-regular fa-trash-can"></i></button>
+            }}><i class="fa-regular fa-trash-can" style={{color:"white"}}></i></button>
             </div>
             </div>
             </div>
             <div className="backcard" style={backrotate ? {transform: "rotateY(-180deg)"} :{transform: "rotateY(180deg)"} } >
             
-                back of the card
+                <div className="back_card_details">
+                    Are You Sure You want to remove this Item ? 
+                </div>
+             <div className="back_card_button">
+           
+   <button onClick={handleRemoveCart}>Yes</button>
    <button onClick={()=>{
     setrotate(false);
     setbackrotate(true);
-   }}>back</button>
-   <button onClick={handleRemoveCart}>remove</button>
+   }}>No</button>
+             </div>
             </div>
         </div>
       </div>
