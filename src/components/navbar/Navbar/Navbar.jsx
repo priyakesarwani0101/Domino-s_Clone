@@ -1,12 +1,9 @@
-// import logo from'../../Image/domino_logo.png'
-import logo from '../Image/domino_logo.png'
+import logo from'../../Image/domino_logo.png'
 import React from 'react'
 import './Style/navbar.css'
-// import menubar from "../../Image/white_menu.png"
-import menubar from '../Image/white_menu.png'
+import menubar from "../../Image/white_menu.png"
 import { useContext } from 'react'
-import { navContext } from '../Context/NavbarContext'
-
+import { navContext } from '../../Context/NavbarContext'
 const Navbar = () => {
   const {handleSidebar}=useContext(navContext);
   const {handleCart}=useContext(navContext);

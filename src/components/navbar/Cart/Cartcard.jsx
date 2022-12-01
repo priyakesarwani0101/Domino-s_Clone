@@ -8,8 +8,8 @@ import { deletecart } from "../../Redux/action";
         
     }
     return(
-        <div style={{textAlign:"center",marginBottom:"15px", border:"1px solid red"}} onClick={handleCartcardData} >
-            {props.id}
+        <div className="cart_single_div" style={{ border:"1px solid red"}} onClick={handleCartcardData} >
+            
         </div>
     )
  }
