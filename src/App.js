@@ -1,18 +1,17 @@
- 
-import './App.css';
-import Detailsp from "./components/product_details/Detailsp"
-import { ChakraProvider } from '@chakra-ui/react'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
- 
+// import  Cards  from './components/products/Card';
+// import React from "react";
+import './App.css';
+
+
 
 function App() {
   return (
-    <div className="App" >
-      
-        
-       
-     </div>
+    <div className="App">
+   
+
+    </div>
+
   );
 }
 
