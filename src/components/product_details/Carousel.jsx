@@ -6,8 +6,11 @@ import './carousel.css'
 
 function UncontrolledExample(props) {
   let price=props.price;
-  console.log(price);
-  const [state,setState]=React.useState('ADD');
+  let getPrice=price.getPrice;
+  console.log({...price});
+  let price1=price.price;
+  // let{price,getPrice}=price;
+  const [count,setCount]=React.useState(0);
     const [state1,setState1]=React.useState('ADD');
     const [state2,setState2]=React.useState('ADD');
     const [state3,setState3]=React.useState('ADD');
@@ -18,70 +21,126 @@ function UncontrolledExample(props) {
     const [state8,setState8]=React.useState('ADD');
     const change=useRef();
    let ChangeButton=()=>{
+    
      if(state1==='ADD'){
     setState1('Remove')
+    setCount(count+1);
+    price1 +=50;
+    getPrice(price1)
      }
      else if(state1==='Remove'){
-      setState1('ADD')
+      setState1('ADD');
+      setCount(count-1);
+      price1 -=50;
+      getPrice(price1)
      }
    }
    let ChangeButton1=()=>{
+     
     if(state2==='ADD'){
-   setState2('Remove')
+   setState2('Remove');
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState2('ADD')
+     setCount(count-1);
+     price1 -=50;
+    getPrice(price1)
     }
   }
   let ChangeButton2=()=>{
+     
     if(state3==='ADD'){
    setState3('Remove')
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState3('ADD')
+     setCount(count-1);
+     price1 -=50;
+    getPrice(price1)
     }
   }
   let ChangeButton3=()=>{
+     
     if(state4==='ADD'){
    setState4('Remove')
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState4('ADD')
+     setCount(count-1);
+     price1 -=50;
+    getPrice(price1)
     }
   }
   let ChangeButton4=()=>{
+     
     if(state5==='ADD'){
    setState5('Remove')
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState5('ADD')
+     setCount(count-1);
+     price1 -=50;
+    getPrice(price1)
     }
   }
    
   let ChangeButton5=()=>{
+     
     if(state6==='ADD'){
    setState6('Remove')
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState6('ADD')
+     setCount(count-1);
+     price1 -=50;
+    getPrice(price1)
     }
   }
 
   let ChangeButton6=()=>{
+     
     if(state7==='ADD'){
    setState7('Remove')
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState7('ADD')
+     setCount(count-1);
+     price1 -=50;
+    getPrice(price1)
     }
   }
 
   let ChangeButton7=()=>{
+     
     if(state8==='ADD'){
    setState8('Remove')
+   setCount(count+1);
+   price1 +=50;
+    getPrice(price1)
     }
     else {
      setState8('ADD')
+     setCount(count-1);
+     price1-=50;
+    getPrice(price1)
     }
   }
 
@@ -101,7 +160,7 @@ function UncontrolledExample(props) {
           src="https://images.dominos.co.in/toppingsMushroom.jpg"
           alt="First slide"
         />
-        <button Ref={change} onClick={ChangeButton}>{state1}</button>
+        <button ref={change} onClick={ChangeButton}>{state1}</button>
         </Box>
         <Box   onClick={ChangeButton1} >
         <Text>Onion</Text>
@@ -113,7 +172,7 @@ function UncontrolledExample(props) {
           src="https://images.dominos.co.in/toppingsOnion.jpg"
           alt="First slide"
         />
-        <button Ref={change} key={1} onClick={ChangeButton1}>{state2}</button>
+        <button ref={change} key={1} onClick={ChangeButton1}>{state2}</button>
         </Box>
         <Box onClick={ChangeButton2} >
             <Text>Capsicum</Text>
@@ -123,7 +182,7 @@ function UncontrolledExample(props) {
           src="https://images.dominos.co.in/toppingsCapsicum.jpg"
           alt="First slide"
         />
-        <button Ref={change} key={2} onClick={ChangeButton2}>{state3}</button>
+        <button ref={change} key={2} onClick={ChangeButton2}>{state3}</button>
         </Box>
         <Box  onClick={ChangeButton3}>
         <Text>Tomato</Text>
@@ -134,13 +193,13 @@ function UncontrolledExample(props) {
           src="https://images.dominos.co.in/toppingsTomato.jpg"
           alt="First slide"
         />
-        <button Ref={change} key={3} onClick={ChangeButton3}>{state4}</button>
+        <button ref={change} key={3} onClick={ChangeButton3}>{state4}</button>
         </Box>
         </Box>
          
       </Carousel.Item>
       <Carousel.Item width='80%' margin='auto' >
-      <Box display='flex' padding='10px' w='80%' height='200px' margin='auto'>
+      <Box display='flex'  w='80%' height='200px' margin='auto'>
          <Box onClick={ChangeButton4} >
          <Text>Paneer</Text>
             <img
@@ -150,7 +209,7 @@ function UncontrolledExample(props) {
           src="https://images.dominos.co.in/toppingsPaneer.jpg"
           alt="First slide"
         />
-        <button Ref={change} key={4} onClick={ChangeButton4}>{state5}</button>
+        <button ref={change} key={4} onClick={ChangeButton4}>{state5}</button>
         </Box>
         <Box  onClick={ChangeButton5}>
         <Text>Red Pepper</Text>
