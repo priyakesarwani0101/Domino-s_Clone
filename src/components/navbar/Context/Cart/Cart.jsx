@@ -16,6 +16,7 @@ const Cart = () => {
     const {handleCart}=useContext(navContext);
 
     let cartData = JSON.parse(localStorage.getItem("cartItems")) || [];
+    console.log(cartData)
    
   //   cartData.map((e)=>{
   //     setSubtotal(subtotal+e.price);
@@ -36,11 +37,9 @@ const Cart = () => {
   return (
     <div className='navbar_cart' style={showcart ?{marginRight:"0px"} : {marginRight:"-400px"}}  >
        <div className='cart_div_scroll'>
-        {/* {
-        cartData.length > 0 ? cartData.map((el)=><Flip_cart_card props={el} func={handleDelete}/>)
-        :
-        <h1>Cart is empty</h1>
-       } */}
+       {
+          
+       }
       </div>
        
        <div className='cart_subtotal_price'>
