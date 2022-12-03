@@ -1,4 +1,6 @@
 import React from 'react'
+import './cart.css'
+import {Link} from  'react-router-dom'
 
 export default function Cart() {
   return (
@@ -95,7 +97,7 @@ export default function Cart() {
                 </div>
                 <div className='break-line-pk'></div>
                 <div className='place-btn-div-pk'>
-                    <button>Place Order</button>
+                    <Link to='/address'><button>Place Order</button></Link>
                 </div>
             </div>
         </div>

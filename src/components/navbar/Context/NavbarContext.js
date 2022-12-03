@@ -1,11 +1,11 @@
 import React,{ createContext, useState } from 'react'
-import Navbar from '../Components/Navbar/Navbar';
-import LowerNav from '../Components/Navbar/LowerNav';
-import Sidebar from '../Components/Sidebar/Sidebar';
-import Cart from '../Components/Cart/Cart';
-import Footer from '../Components/Footer/Footer'
-import Search from '../Components/Searchbar/Search';
-import Product from '../Components/Product/Product';
+import Navbar from './Navbar/Navbar';
+import LowerNav from './Navbar/LowerNav';
+import Sidebar from './Sidebar/Sidebar';
+ import Cart from './Cart/Cart';
+// import Footer from './Footer/Footer'
+import Search from './Searchbar/Search';
+// import Product from './Product/Product';
 export const navContext=createContext();
 const NavbarContext = () => {
     const [showside,setShowSide]=useState(false);
@@ -32,8 +32,8 @@ const NavbarContext = () => {
   <Sidebar/>
    <Search/>
   <Cart/>
-  <Product/>
-  <Footer/>
+  {/* <Product/> */}
+
    </navContext.Provider>
   )
 }
