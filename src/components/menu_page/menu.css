@@ -23,12 +23,22 @@
 }
 .menu > img{
     width: 80%;
+    margin: auto;
     height: 300px;
     margin-top: 20px;
 }
-#btn{
+.menu > img:hover{
+ width: 90%;
+ margin: auto;
+ height: 330px;
+}
+.menu > h1{
+    font-size: large;
+    font-weight: bold;
+}
+#menuBtn{
     padding: 10px 35px;
-    color: red;
+    color: white;
     font-weight: 700;
     font-size: 16px;
     border-radius: 7px;
@@ -39,4 +49,7 @@
 }
 #banner > img{
     width: 100%;
+}
+#menuBtn:hover{
+    padding: 15px 40px;
 }
