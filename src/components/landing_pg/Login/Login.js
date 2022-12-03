@@ -69,6 +69,8 @@ import {
 
         if(otp == eOTP){
             alert("login Success!") ;
+            setEOTP('') ;
+            setFlag(true) ;
 
         }else{
             alert("wrong OTP entered");
