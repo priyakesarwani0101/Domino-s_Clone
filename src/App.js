@@ -22,21 +22,7 @@ function App() {
     <div className="App">
       
 
-      {/* <NavbarContext />
-     
-
-      <Routes>
-        
-       <Route path="/menu/veg_pizza" element={<VegPizza />}></Route>
-       <Route path="/menu/non_veg_pizza" element={<NonvegPizza />}></Route>
-       <Route path="/menu/pizza_mania" element={<PizzaMania />}></Route>
-       <Route path="/menu/pasta" element={<Pasta />}></Route>
-       <Route path="/menu/sides_beverages" element={<Beverages />}></Route>
-         
-
-      </Routes> */}
-
-     {/* <Footer /> */}
+    
 
     </div>
 
