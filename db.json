@@ -1,4 +1,6 @@
 {
+    "domino_data":
+{
     "veg_pizza":[
         {
             "id":1,
@@ -561,10 +563,11 @@
         }  
     ],
 
-    "sides_and_beverages": [
+
+    "sides_beverages": [
         {
             "id": 401,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "GARLIC BREADSTICKS",
             "description": "The endearing tang of garlic in breadstics baked to perfection",
             "image": "https://www.dominos.co.in/files/items/garlic-bread.webp",
@@ -574,7 +577,7 @@
         },
         {
             "id": 402,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "STUFFED GARLIC BREAD",
             "description": "Freshly Baked Garlic Bread stuffed with mozzarella cheese, sweet corns & tangy and spicy jalapeÃ±os",
             "image": "https://www.dominos.co.in/files/items/stuffed-garlic-breadstick_1346070564.webp",
@@ -584,7 +587,7 @@
         },
         {
             "id": 403,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "CHICKEN PEPPERONI STUFFED GARLIC BREAD",
             "description": "Freshly Baked Garlic Bread stuffed with Delectable Chicken Pepperoni, Cheese and sprinkled with Basil Parsley",
             "image": "https://www.dominos.co.in/files/items/BRD0031.webp",
@@ -594,7 +597,7 @@
         },
         {
             "id": 404,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "PANEER TIKKA STUFFED GARLIC BREAD",
             "description": "Freshly Baked Stuffed Garlic Bread with Cheese, Onion and Paneer Tikka fillings. Comes with a dash of Basil Parsley Sprinkle",
             "image": "https://www.dominos.co.in/files/items/BRD0030.webp",
@@ -604,7 +607,7 @@
         },
         {
             "id": 405,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "CHEESE JALAPENO DIP",
             "description": "A soft creamy cheese dip spiced with jalapeno",
             "image": "https://www.dominos.co.in/files/items/_thumb_17451.png",
@@ -614,7 +617,7 @@
         },
         {
             "id": 406,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "CHEESE DIP",
             "description": "A dreamy creamy cheese dip to add that extra tang to your snack",
             "image": "https://www.dominos.co.in/files/items/_thumb_17450.png",
@@ -624,7 +627,7 @@
         },
         {
             "id": 407,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "LAVA CAKE",
             "description": "Filled with delicious molten chocolate inside",
             "image": "https://www.dominos.co.in/files/items/choco-lava-cake-771.jpg",
@@ -634,7 +637,7 @@
         },
         {
             "id": 408,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "BUTTERSCOTCH MOUSSE CAKE",
             "description": "A Creamy & Chocolaty indulgence with layers of rich, fluffy Butterscotch Cream and delicious Dark Chocolate Cake, topped with crunchy Dark Chocolate morsels - for a perfect dessert treat!",
             "image": "",
@@ -644,7 +647,7 @@
         },
         {
             "id": 409,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "RED VELVET LAVA CAKE",
             "description": "A truly indulgent experience with sweet and rich red velvet cake on a creamy cheese flavoured base to give a burst of flavour in",
             "image": "",
@@ -654,7 +657,7 @@
         },
         {
             "id": 410,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "TACO MEXICANA VEG",
             "description": "A crispy flaky wrap filled with Mexican Arancini Bean Patty rolled over a creamy Harissa Sauce",
             "image": "https://www.dominos.co.in/files/items/Main_Menu-VG.jpg",
@@ -664,7 +667,7 @@
         },
         {
             "id": 411,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "TACO MEXICANA NON VEG",
             "description": "A crispy flaky wrap filled with Hot and Smoky Chicken Patty rolled over a creamy Harissa Sauce",
             "image": "https://www.dominos.co.in/files/items/Main_Menu-NVG.jpg",
@@ -674,7 +677,7 @@
         },
         {
             "id": 412,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "VEG PARCEL",
             "description": "",
             "image": "https://www.dominos.co.in/files/items/150135_AHA_Menu_main_1.jpg",
@@ -684,7 +687,7 @@
         },
         {
             "id": 413,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "CHICKEN PARCEL",
             "description": "",
             "image": "https://www.dominos.co.in/files/items/150135_Aha_Non_Veg_439x307-01.jpg",
@@ -694,7 +697,7 @@
         },
         {
             "id": 414,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "CRUNCHY STRIPS",
             "description": "Oven baked wheat thin crips with peri peri seasoning with a cheesy dip",
             "image": "https://www.dominos.co.in/files/items/crunchy_strips.png",
@@ -704,7 +707,7 @@
         },
         {
             "id": 415,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "POTATO CHEESE SHOTS",
             "description": "Crisp and golden outside,flavorful burst of cheese, potato & spice inside",
             "image": "https://www.dominos.co.in/files/items/potato_cheese_shots.png",
@@ -714,7 +717,7 @@
         },
         {
             "id": 416,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "TACO MEXICANA-VEG(SINGLE)",
             "description": "Truly irresistible! Crispy taco with a decicious veg patty & creamy sauce",
             "image": "https://www.dominos.co.in/files/items/taco.png",
@@ -724,7 +727,7 @@
         },
         {
             "id": 417,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "CRINKLE FRIES",
             "description": "Crispy wavy masala coated fries served with a spicy tomato chilli sauce",
             "image": "https://www.dominos.co.in/files/items/crinkle_fries.png",
@@ -734,7 +737,7 @@
         },
         {
             "id": 418,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "BROWNIE FANTASY",
             "description": "Sweet Temptation! Hot Chocolate Brownie drizzled with chocolate fudge sauce",
             "image": "https://www.dominos.co.in/files/items/brownie_fantasy.png",
@@ -744,7 +747,7 @@
         },
         {
             "id": 419,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "Pepsi (500ml)",
             "description": "",
             "image": "https://images.dominos.co.in/cart/BEV0119_1.jpg",
@@ -754,7 +757,7 @@
         },
         {
             "id": 420,
-            "category": "Sides & Beverages",
+            "category": "sides_beverages",
             "title": "B Natural Mixed Fruit from Himalayas(300ml)",
             "description": "",
             "image": "https://images.dominos.co.in/cart/MIXEDFRUIT.jpg",
@@ -859,6 +862,4 @@
 
 
 }
-
-
-
+}
