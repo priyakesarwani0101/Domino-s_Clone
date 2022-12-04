@@ -39,7 +39,8 @@
    
     height: 500px;
    overflow-Y: scroll;
-   /* background-color: rgb(130,187,55); */
+  
+   background-color: rgb(130,187,55) !important;
 }
 .cart_div_img img{
     border-radius: 5px;

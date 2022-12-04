@@ -864,59 +864,22 @@
   },
   "cartItems": [
     {
-      "id": 1007,
-      "image": "https://www.dominos.co.in//files/items/golden_corn_veg.jpg",
-      "title": "GOLDEN CORN",
-      "price": 79,
-      "ratings": 4.8,
+      "id": 1,
+      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+      "title": "Margherita everyday ss pizza",
+      "price": 180,
+      "ratings": 3.6,
       "quantity": 1,
-      "category": "pizza_mania"
+      "category": " veg_pizza"
     },
     {
-      "id": 1008,
-      "image": "https://www.dominos.co.in//files/items/cheese_and_tomato.png",
-      "title": "CHEESE N TOMATO",
-      "price": 305,
-      "ratings": 4.9,
+      "id": 2,
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
+      "title": "Caprese Gourmet Pizza",
+      "price": 390,
+      "ratings": 4,
       "quantity": 1,
-      "category": "pizza_mania"
-    },
-    {
-      "id": 1015,
-      "image": "https://feenix.co.in/wp-content/uploads/2022/07/424X431pix_Fresh_Veggie-01.jpg",
-      "title": "FRESH VEGGIE",
-      "price": 110,
-      "ratings": 4.8,
-      "quantity": 1,
-      "category": "pizza_mania"
-    },
-    {
-      "id": 710,
-      "image": "https://www.dominos.co.in//files/items/updated_keema_do_pyaza.webp",
-      "title": "Keema Do Pyaza",
-      "price": 455,
-      "ratings": 4.8,
-      "quantity": 1,
-      "category": "non_veg_pizza"
-    },
-    {
-      "id": 711,
-      "image": "https://www.dominos.co.in//files/items/MoroccanSpicePPNV_N.jpg",
-      "title": "Moroccan Spice Pasta Pizza - Non Veg",
-      "price": 509,
-      "ratings": 4.5,
-      "quantity": 2,
-      "category": "non_veg_pizza"
-    },
-    {
-      "id": 110,
-      "title": "Baked Rigatoni Pasta",
-      "price": 160,
-      "description": "pasta with garlicky tomato sauce, fresh basil, and gooey mozzarella.",
-      "image": "https://www.acouplecooks.com/wp-content/uploads/2020/06/Baked-Rigatoni-013-735x919.jpg",
-      "ratings": 4.5,
-      "quantity": 2,
-      "category": "veg pasta"
+      "category": "veg_pizza "
     }
   ]
 }

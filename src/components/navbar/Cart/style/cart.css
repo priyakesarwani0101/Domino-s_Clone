@@ -1,6 +1,6 @@
 /* @import url(//db.onlinewebfonts.com/c/cef009888ec0e6c3fdbb27db91a57b8f?family=Proxima+Nova+A); */
 .navbar_cart{
-  
+  /* background-color: #fff !important; */
     position: fixed;
     /* border: 10px solid teal; */
     top: 52px;
@@ -12,9 +12,11 @@
     z-index:9999;
     transition: 0.5s;
     color: black;
-    background-color: rgb(193,193,193);
+    /* background-image: url(https://pizzaonline.dominos.co.in/static/assets/empty_cart.png); */
+    /* border: 10px solid teal; */
    
 }
+
 .cart_div_scroll::-webkit-scrollbar {
     width: 5px;
     /* color: red; */
