@@ -4,9 +4,9 @@
     padding: 0.5em 0.5em 1em 1.5em ;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 4px 15px 0 #708aa5 ;
+    box-shadow: 0 4px 10px 0 #708aa5 ;
     margin-bottom: 50px;
-    background-color: #d8e6f5;
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -56,7 +56,7 @@
     
 }
 #explore-items{
-    width: 90%;
+    width: 100%;
     height: 300px;
     margin: auto;
     display: flex;
@@ -135,7 +135,11 @@
     margin-top: -10px;
 }
 
-
+.first-info,.second-info,.third-info,.fourth-info {
+    letter-spacing: 1px;
+    margin-top: 20px;
+    line-height: 2;
+}
 
 
 

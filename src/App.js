@@ -1,4 +1,3 @@
-// import  Cards  from './components/products/Card';
 import React from "react";
 import './App.css';
 import NavbarContext from "./components/navbar/Context/NavbarContext";
@@ -13,7 +12,6 @@ import Beverages from "./components/products/beverages";
 import Cart from './components/cart/cart';
 import Address from "./components/cart/Address";
 import Payment from "./components/cart/payment";
-import Menu from './components/menu_page/menu'
 
 
 
@@ -34,8 +32,8 @@ import Menu from './components/menu_page/menu'
        <Route path="/menu/pasta" element={<Pasta />}></Route>
        <Route path="/menu/sides_beverages" element={<Beverages />}></Route>
        <Route path="/cart" element={<Cart />}></Route>
-         <Route path="/address" element={<Address />}></Route>
-         <Route path="/payment" element={<Payment />}></Route>
+       <Route path="/address" element={<Address />}></Route>
+       <Route path="/payment" element={<Payment />}></Route>
 
       </Routes>
 

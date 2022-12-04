@@ -10,14 +10,17 @@ import {
     PinInput, PinInputField, HStack
   } from '@chakra-ui/react';
   import "./Login.css"
+  import { useNavigate } from 'react-router-dom';
   
   import React ,{ useState } from 'react';
 
   
   export default function ResetPasswordForm() {
 
+    let navigate = useNavigate() ;
+
     let [otp,setOtp] = useState('') ;
-    let [mob,setMob] = useState("") ;
+    let [mobileNumber,setMobileNumber] = useState("") ;
     let [flag,setFlag] = useState(true) ;
 
     let [eOTP,setEOTP] = useState('') ;
@@ -27,21 +30,21 @@ import {
 
     const check = (e)=>{
         
-        setMob(e.target.value) ;
+        setMobileNumber(e.target.value) ;
     }
 
     const getOTP = ()=>{
 
-        if(mob.length < 10){
-            setMob("") ;
+        if(mobileNumber.length < 10){
+          setMobileNumber("") ;
             alert("enter valid number") ;
             return ;
-        }else{
+        }else{ 
             for(let i=0;i<10;i++){
-                if(mob[i] >= '0' && mob[i] <='9'){
+                if(mobileNumber[i] >= '0' && mobileNumber[i] <='9'){
                     continue
                 }else{
-                    setMob("") ;
+                    setMobileNumber("") ;
                     alert("enter valid number!") ;
                     return ;
                 }
@@ -63,15 +66,16 @@ import {
     }
 
     const compare = ()=>{
-        console.log(otp) ;
-        console.log(eOTP) ;
+        // console.log(otp) ;
+        // console.log(eOTP) ;
 
 
         if(otp == eOTP){
             alert("login Success!") ;
             setEOTP('') ;
             setFlag(true) ;
-
+            localStorage.setItem("userLoginNumber",mobileNumber) ;
+            navigate("/") ;
         }else{
             alert("wrong OTP entered");
             setEOTP('') ;
@@ -101,11 +105,11 @@ import {
             <FormLabel>Enter Mobile number</FormLabel>
             <Input
             onChange={check}
-            value={mob}
+            value={mobileNumber}
             maxLength={10}
               placeholder="Mob No."
               _placeholder={{ color: 'gray.500' }}
-              type="email"
+              type="number"
             />
           </FormControl>
 
