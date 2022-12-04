@@ -1,5 +1,6 @@
 import React from 'react'
-// import './Address.css'
+ import './Address.css'
+ import {Link} from 'react-router-dom'
 
 function Address() {
   return (
@@ -22,7 +23,7 @@ function Address() {
                     </div>
                 </div>
             </div>
-            <div className='adrs-save-btn-div-pk'><button>SAVE & CONTINUE</button></div>
+            <div className='adrs-save-btn-div-pk'><Link to="/payment"><button>SAVE & CONTINUE</button></Link></div>
         </div>
     </div>
   )
