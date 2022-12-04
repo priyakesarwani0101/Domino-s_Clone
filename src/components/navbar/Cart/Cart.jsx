@@ -6,7 +6,7 @@ import Cartcard from './Cartcard'
 import Flip_cart_card from './Flip_cart_card'
 import { useState } from 'react'
 import { useEffect } from 'react'
-
+import EmptyCart from './EmptyCart'
 const Cart = () => {
   const [subtotal,setSubtotal]=useState(0);
   const cartData=useSelector((state)=>state.cartArr);
@@ -30,21 +30,25 @@ const Cart = () => {
   //  filter:"blur(5px)"
   return (
     <div className='navbar_cart' style={showcart ?{marginRight:"0px"} : {marginRight:"-400px"}}  >
-       <div className='cart_div_scroll'>
+       <div className='cart_div_scroll' >
         {
         cartData.length > 0 ? cartData.map((el)=><Flip_cart_card props={el} func={handleDelete}/>)
         :
         <h1>Cart is empty</h1>
        }
       </div>
-       
-       <div className='cart_subtotal_price'>
-        <div>
-          <div>Subtotal</div>
-          <div>₹ {subtotal}</div>
-        </div>
-        <div><button>Checkout</button></div>
+       {  cartData.length > 0 ?
+       <div className='cart_subtotal_price' >
+       <div>
+         <div>Subtotal</div>
+         <div>₹ {subtotal}</div>
        </div>
+       <div><button>Checkout</button></div>
+      </div>
+      :
+      null
+       }
+       
     </div>
   )
 }

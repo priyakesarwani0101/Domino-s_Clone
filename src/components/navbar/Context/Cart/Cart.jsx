@@ -9,11 +9,11 @@ import { useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { useSelector,useDispatch } from 'react-redux'
 import {addToCart} from '../../../../Redux/action'
+import EmptyCart from '../../Cart/EmptyCart'
 
 const Cart = () => {
   // const [cartdata,setCartData]=useState([]);
   const cartData=useSelector((state)=>{
-    
     return  state.cartArr;
   })
    
@@ -38,8 +38,8 @@ const Cart = () => {
     // console.log(cartData)
    
 useEffect(()=>{
-  fetchdata("http://localhost:3002/cartItems")
-  //  console.log(cartData)
+  // fetchdata("http://localhost:3002/cartItems")
+  // //  console.log(cartData)
 },[])
 const fetchdata=async(url)=>{
 try{
@@ -63,16 +63,16 @@ dispatch(addToCart(data))
           }
           )
           :
-          <h1>Cart is Empty</h1>
+          <EmptyCart/>
        }
       </div>
        
-       <div className='cart_subtotal_price'>
+       <div className='cart_subtotal_price' style={cartData.length>0 ? {display:"block"} : {display:"none"}}>
         <div>
           <div>Subtotal</div>
           <div>₹ {calculateAmount}</div>
         </div>
-        <div><Link to='/cart'><button>Checkout</button></Link></div>
+        <div onClick={()=>handleCart(false)}><Link to='/cart'><button>Checkout</button></Link></div>
        </div>
     </div>
   )

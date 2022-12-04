@@ -864,20 +864,20 @@
   },
   "cartItems": [
     {
-      "id": 1007,
-      "image": "https://www.dominos.co.in//files/items/golden_corn_veg.jpg",
-      "title": "GOLDEN CORN",
-      "price": 79,
-      "ratings": 4.8,
+      "id": 1,
+      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+      "title": "Margherita everyday ss pizza",
+      "price": 180,
+      "ratings": 3.6,
       "quantity": 1,
-      "category": "pizza_mania"
+      "category": " veg_pizza"
     },
     {
-      "id": 1008,
-      "image": "https://www.dominos.co.in//files/items/cheese_and_tomato.png",
-      "title": "CHEESE N TOMATO",
-      "price": 305,
-      "ratings": 4.9,
+      "id": 2,
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
+      "title": "Caprese Gourmet Pizza",
+      "price": 390,
+      "ratings": 4,
       "quantity": 1,
       "category": "pizza_mania"
     },
