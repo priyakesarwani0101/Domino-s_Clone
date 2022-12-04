@@ -1,8 +1,9 @@
-import React from "react";
-import './product.css'
+import React,{useState} from "react";
+import './product.css';
+
 
 const Cards = ({props}) => {
-
+ const [items,setItems] = useState([]);
   let cartItems = [];
   
    localStorage.setItem("cartItems",JSON.stringify(cartItems));
@@ -14,6 +15,8 @@ const Cards = ({props}) => {
         cartItems.push(props);
 
         localStorage.setItem("cartItems",JSON.stringify(cartItems));
+     setItems(JSON.parse(localStorage.getItem("cartItems")))
+     console.log(items);
    }
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css" ;
-import {Box,Text,Heading} from "@chakra-ui/react"
+import {Box,Text,Heading,Image} from "@chakra-ui/react"
 
 export default function Home() {
   return (
@@ -70,11 +70,11 @@ export default function Home() {
   </button>
 </div> */}
 
-        <marquee>
-          <div style={{display:"flex",gap:"15px",marginTop:"40px"}}>
-            <img style={{boxShadow:"0 0 15px black"}} src='https://api.dominos.co.in/prod-olo-api/images/Home_airtel_30082020.jpg' alt="re1" />
-            <img style={{boxShadow:"0 0 15px black"}} src='https://api.dominos.co.in/prod-olo-api/images/Home_airtel_30082020.jpg' alt="re2" />
-            <img style={{boxShadow:"0 0 15px black"}} src='https://api.dominos.co.in/prod-olo-api/images/Home_airtel_30082020.jpg' alt="re3" />
+        <marquee scrollamount="30" >
+          <div style={{display:"flex",gap:"15px",marginTop:"40px",height:"300px"}}>
+            <Image src='https://api.dominos.co.in/prod-olo-api/images/Home_airtel_30082020.jpg' alt="re1" />
+            <Image src='https://api.dominos.co.in/prod-olo-api/images/Home_Paytm_20210519.jpg' alt="re2" />
+            <Image src='https://api.dominos.co.in/prod-olo-api/images/Home_Freecharge_20210405.jpg' alt="re3" />
           </div>
         </marquee>
 

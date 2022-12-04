@@ -1,10 +1,11 @@
 import logo from'../../Image/domino_logo.png'
-import React from 'react'
+import React, { useState } from 'react'
 import './Style/navbar.css'
 import menubar from "../../Image/white_menu.png"
 import { useContext } from 'react'
 import { navContext } from '../../Context/NavbarContext'
 import Animation from '../Animation'
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
   const {handleSidebar}=useContext(navContext);
   const {handleCart}=useContext(navContext);
@@ -12,8 +13,37 @@ const Navbar = () => {
   const {handleLogin}=useContext(navContext);
   const {showcart}=useContext(navContext);
   const {handleSearch}=useContext(navContext);
-  const {showside} =useContext(navContext)
-  
+  const {showside} =useContext(navContext);
+
+  let[userNumber,setUserNumber] = useState("") ;
+
+  const navigate=useNavigate();
+const handle_login_status_navbar=()=>{
+
+    setUserNumber(localStorage.getItem("userLoginNumber")) ;
+    if(userNumber == ""){
+      navigate("/login") ;
+      handleLogin(false) ;
+    }else{
+      setUserNumber(userNumber) ;
+      handleLogin(true) ;
+    }
+
+}
+
+if(userNumber !=""){
+  console.log(userNumber) ;
+  setUserNumber(userNumber) ;
+
+}
+
+// if(userNumber == ""){
+//   // navigate("/login") ;
+//   handleLogin(false) ;
+// }else{
+//   handleLogin(true) ;
+// }
+
   const handleshowCart =()=>{
     if(showcart){
       handleCart(false);
@@ -42,11 +72,11 @@ const Navbar = () => {
   <div><i class="fa-solid fa-user"></i></div>
   <div>
     {showlogin ? <div className='navbar_data_content'>
-    9554840740
+    {userNumber}
     </div> :
     <div className='navbar_login_content'>
     <div>Profile</div>
-    <div onClick={()=>handleLogin(true)}>Login</div>
+    <div onClick={handle_login_status_navbar}>Login</div>
     </div>
     }
   </div>
