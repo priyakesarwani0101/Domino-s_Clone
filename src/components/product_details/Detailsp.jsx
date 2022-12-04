@@ -1,6 +1,7 @@
 import React from 'react'
 import UncontrolledExample from './Carousel'
 import {Button,Image,Heading,Text,Textarea,DrawerFooter,Select,DrawerCloseButton,InputRightAddon,InputLeftAddon,InputGroup,Input,Box,FormLabel,Drawer,DrawerHeader,DrawerBody,DrawerOverlay,useDisclosure,Stack,DrawerContent, localStorageManager} from '@chakra-ui/react'
+import CouponPage from './CouponPage'
 // import Carousel from './Carousel'
 //  const details = () => {
 //    return (
@@ -23,9 +24,12 @@ function Detailsp() {
   
     return (
       <>
+      <Box>
         <Button leftIcon={"ram"} colorScheme='teal' onClick={onOpen}>
           Create user
         </Button>
+        <CouponPage/>
+        </Box>
         <Drawer
           isOpen={isOpen}
           placement='left'
@@ -36,15 +40,15 @@ function Detailsp() {
         >
           <DrawerOverlay />
           <DrawerContent overflowY='scroll'>
-            <DrawerCloseButton />
+            {/* <DrawerCloseButton /> */}
             {/* <DrawerHeader borderBottomWidth='1px'> */}
             <Box boxSize='sm' w="96%" h="250px" position='relative' >
-               <Image boxSize='100%' objectFit='cover' m='auto' src='https://images.dominos.co.in/PIZ0171.jpg' alt='Dan Abramov'  />
-               <Heading color='red' ml='50px' mt='-70px' position='absolute'>₹ {price}</Heading>
+               <Image ml='10px'   objectFit='cover' m='auto' src='https://images.dominos.co.in/PIZ0171.jpg' alt='Dan Abramov'  />
+               <Heading color='white' ml='50px' mt='-70px' position='absolute'>₹ {price}</Heading>
                </Box>
 
                <Box ml='10px'>{"The 4 Cheese Pizza"}</Box>
-               <h1 >'Cheese Overloaded pizza with 4 different varieties of cheese and 4 times the cheese of a normal pizza, including a spicy hit of Ghost Pepper flavoured Cheese'</h1>
+               <Text ml='10px'>  Cheese Overloaded pizza with 4 different varieties of cheese and 4 times the cheese of a normal pizza, including a spicy hit of Ghost Pepper flavoured Cheese  </Text>
                 <Box w='80%' margin='auto'>
                     <Heading size='sm'>Select Size</Heading >
                     <Box w='80%' display='flex' gap='5px'>
@@ -74,6 +78,7 @@ function Detailsp() {
                         <span style={{backgroundColor:'green',color:'white'}}> ₹ {price}</span></Box></Box>
                     </Box>
                 </Box>
+                <Box ml='60px'><Heading size='sm'>Add Veg Toppings @  ₹ 50.00 each  </Heading> </Box>
                 <Box>
                     <UncontrolledExample  price={{price,getPrice}}/>
                 </Box>

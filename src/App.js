@@ -1,4 +1,3 @@
-// import  Cards  from './components/products/Card';
 import React from "react";
 import './App.css';
 import NavbarContext from "./components/navbar/Context/NavbarContext";
@@ -13,9 +12,7 @@ import Beverages from "./components/products/beverages";
 import Cart from './components/cart/cart';
 import Address from "./components/cart/Address";
 import Payment from "./components/cart/payment";
-import Menu from './components/menu_page/menu'
-import Login from "./components/landing_pg/Login/Login"
-import Home from "./components/landing_pg/Home";
+
 
 
  function App() {
@@ -23,12 +20,11 @@ import Home from "./components/landing_pg/Home";
 
    return (
     <div className="App">
+      
 
        <NavbarContext />
      
       <Routes>
-       <Route path="/" element={<Home />}></Route>
-
        <Route path="/menu" element={<Product />}></Route>
        <Route path="/menu/veg_pizza" element={<VegPizza />}></Route>
        <Route path="/menu/non_veg_pizza" element={<NonvegPizza />}></Route>
@@ -38,7 +34,6 @@ import Home from "./components/landing_pg/Home";
        <Route path="/cart" element={<Cart />}></Route>
        <Route path="/address" element={<Address />}></Route>
        <Route path="/payment" element={<Payment />}></Route>
-       <Route path="/login" element={<Login />}></Route>
 
       </Routes>
 
