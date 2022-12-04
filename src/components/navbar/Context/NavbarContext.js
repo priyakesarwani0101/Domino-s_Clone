@@ -5,6 +5,7 @@ import Sidebar from './Sidebar/Sidebar';
  import Cart from './Cart/Cart';
 // import Footer from './Footer/Footer'
 import Search from './Searchbar/Search';
+import Login from "../../landing_pg/Login/Login"
 // import Product from './Product/Product';
 export const navContext=createContext();
 const NavbarContext = () => {
@@ -27,7 +28,6 @@ const NavbarContext = () => {
   return (
    <navContext.Provider value={{handleCart,handleSidebar,handleLogin,handleSearch,showside,showcart,showlogin,showSearch}}>
   <Navbar/>
-  
   <LowerNav/>
   <Sidebar/>
    <Search/>
