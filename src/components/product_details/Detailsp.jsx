@@ -44,7 +44,7 @@ function Detailsp() {
         <Button leftIcon={"ram"} colorScheme='teal' onClick={onOpen}>
           Create user
         </Button>
-        <CouponPage/>
+         
         </Box>
         <Drawer
           isOpen={isOpen}
