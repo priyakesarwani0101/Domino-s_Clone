@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
  import './Address.css'
  import {Link} from 'react-router-dom'
-
+import { addressContext } from './addressContext/AddressContext'
 function Address() {
+  const {openaddress} =useContext(addressContext);
+  const {adressfunction} =useContext(addressContext);
   return (
-    <div className='address_container-pk'>
+    <div className='address_container-pk' style={openaddress ? {marginRight:"0px"} : {marginRight:"-502px"} }>
         <div>
             <h2 className='add-adrs-heading-pk'>Add Address</h2>
             <div className='address-input-field-div-pk'>
@@ -23,7 +25,7 @@ function Address() {
                     </div>
                 </div>
             </div>
-            <div className='adrs-save-btn-div-pk'><Link to="/payment"><button>SAVE & CONTINUE</button></Link></div>
+            <div className='adrs-save-btn-div-pk'><Link to="/payment"><button onClick={()=>adressfunction(false)}>SAVE & CONTINUE</button></Link></div>
         </div>
     </div>
   )
