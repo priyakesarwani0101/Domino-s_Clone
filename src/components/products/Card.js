@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import './product.css';
+// import Button from "../Button/Button";
 import { useDispatch } from "react-redux";
 
 
@@ -39,12 +40,14 @@ const Cards = ({props}) => {
       src={props.image}
       />
       
-     <b> <h3>{props.title}</h3></b>
+     <b> <h3 style={{textAlign:"center"}}>{props.title}</h3></b>
       
-      <h3>Rs: {props.price}</h3>
-       <h3>Ratings: {props.ratings } <i class="fa-solid fa-star"></i></h3>
+      <h3 style={{textAlign:"center"}}>Rs: {props.price}</h3>
+       <h3 style={{textAlign:"center"}}>Ratings: {props.ratings } <i class="fa-solid fa-star"></i></h3>
       <div id="cartBtn">
-        <button onClick={()=>addedToCart(props)}>add to cart</button>
+        {/* <Button /> */}
+        <button>Details</button>
+        <button onClick={()=>addedToCart(props)}>Add to cart</button>
       </div>
 
       

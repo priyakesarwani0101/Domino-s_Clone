@@ -65,9 +65,10 @@ const Pasta = () => {
       >
         <select
           style={{
-            backgroundColor: "pink",
+            backgroundColor: "#095c91",
             borderRadius: "10px",
             padding: "10px",
+            color:"white"
           }}
           id="sortByPrice"
           onChange={sortByPrice}
@@ -78,9 +79,10 @@ const Pasta = () => {
         </select>
         <select
           style={{
-            backgroundColor: "pink",
+            backgroundColor: "#095c91",
             borderRadius: "10px",
             padding: "10px",
+            color:"white"
           }}
           id="sortByRating"
           onChange={sortByRatings}

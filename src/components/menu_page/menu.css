@@ -12,14 +12,14 @@
     padding: 30px;
 }
 .menu{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: auto;
     padding: 20px;
     padding-bottom: 20px;
    background-image: url("https://www.dominos.co.in/theme2/front/images/menu-images/red.webp");
    color: white;
-   
+    align-items: center;
 }
 .menu > img{
     width: 80%;
@@ -44,6 +44,7 @@
     border-radius: 7px;
     border: none;
    margin: 10px 10px;
+   margin-left: 30%;
    text-transform: uppercase;
    border: 1px solid #fff;
 }
@@ -52,4 +53,5 @@
 }
 #menuBtn:hover{
     padding: 15px 40px;
+    margin-left: 28%;
 }

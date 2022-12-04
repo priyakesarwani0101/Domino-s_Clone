@@ -2,17 +2,26 @@ import React from "react";
 import "./Button.css";
 
 const Button = () => {
-  let btn_comp = document.getElementById("btn_comp");
-  let btnTxt = document.getElementById("btn_txt");
-  btn_comp.onclick = () => {
-    btnTxt.innerText = "Thanks";
-    btn_comp.classList.add("active");
-  };
+  // let btn_comp = document.getElementById("btn_comp");
+  // let btnTxt = document.getElementById("btn_txt");
+
+  // btn_comp.onclick = () => {
+  //   btnTxt.innerText = "Thanks";
+  //   btn_comp.classList.add("active");
+  // };
+
+  // let geDetails = ()=>{
+  //   let btn_comp = document.getElementById("btn_comp");
+  // let btnTxt = document.getElementById("btn_txt");
+
+  //   btnTxt.innerText = "Thanks";
+  //   btn_comp.classList.add("active");
+  // }
 
   return (
     <div>
       <div class="hero">
-        <button id="btn_comp">
+        <button id="btn_comp" onClick={geDetails}>
           <p id="btn_txt">Submit</p>
           <div class="check-box">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">

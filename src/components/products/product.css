@@ -8,6 +8,7 @@
     width: 80%;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
@@ -32,7 +33,7 @@
     /* background-color: darkgoldenrod; */
     margin-top: 15px;
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
 
 }
 #cartBtn > button{
