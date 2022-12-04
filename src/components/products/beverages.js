@@ -7,12 +7,15 @@ import './product.css';
 
 const Beverages = () => {
  
-  const  data =  useSelector((storeData)=>{
+ 
+  const data = useSelector((state) => {
+    return state.data;
     
-      return storeData.domino_data
-  })
+  });
+  console.log(data.data);
+  let [state, setState] = useState([...data.data.sides_beverages]);
 
-  let [state, setState] = useState([...data.sides_beverages]);
+
 
   const sortByPrice = (e) => {
     let Price = e.target.value;

@@ -5,12 +5,13 @@ import Cards from "./Card";
 import './product.css';
 const Pasta = () => {
  
-  const  data =  useSelector((storeData)=>{
+  const data = useSelector((state) => {
+    return state.data;
     
-      return storeData.domino_data
-  })
+  });
+  console.log(data.data);
+  let [state, setState] = useState([...data.data.pasta]);
 
-  let [state, setState] = useState([...data.pasta]);
   // console.log(vegPizza);
 
   const sortByPrice = (e) => {

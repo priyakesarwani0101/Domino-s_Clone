@@ -1,14 +1,16 @@
+import { calcLength } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import Cards from "./Card";
 import "./product.css";
 
 const VegPizza = () => {
-  const data = useSelector((storeData) => {
-    return storeData.domino_data;
+  const data = useSelector((state) => {
+    return state.data;
+    
   });
-  console.log(data);
-  let [state, setState] = useState([...data.veg_pizza]);
+  console.log(data.data);
+  let [state, setState] = useState([...data.data.veg_pizza]);
   // console.log(vegPizza);
 
   const sortByPrice = (e) => {

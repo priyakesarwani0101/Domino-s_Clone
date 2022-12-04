@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { productAction } from "./productAction/productAction";
-// import "./product.css";
+import {adddata} from '../../Redux/action'
 import Menu from "../menu_page/menu";
-// import "../menu_page/menu.css";
 
 
 const Product = () => {
-  const data = useSelector((storeData) => {
-    return storeData.domino_data;
+  const data = useSelector((state) => {
+    return state.data;
   });
   console.log(data);
 
@@ -21,7 +19,7 @@ const Product = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        productAction(data, dispatch);
+        dispatch(adddata(data));
       });
   };
 

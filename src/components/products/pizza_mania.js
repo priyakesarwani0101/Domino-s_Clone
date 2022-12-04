@@ -5,12 +5,13 @@ import Cards from "./Card";
 import './product.css';
 const PizzaMania = () => {
  
-  const  data =  useSelector((storeData)=>{
+  const data = useSelector((state) => {
+    return state.data;
     
-      return storeData.domino_data
-  })
-
-  let [state, setState] = useState([...data.pizza_mania]);
+  });
+  console.log(data.data);
+  let [state, setState] = useState([...data.data.pizza_mania]);
+ 
 
   const sortByPrice = (e) => {
     let Price = e.target.value;

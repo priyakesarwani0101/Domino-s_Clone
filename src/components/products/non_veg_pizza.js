@@ -4,12 +4,14 @@ import Cards from "./Card";
 import './product.css';
 const NonvegPizza = () => {
  
-  const  data =  useSelector((storeData)=>{
-    
-      return storeData.domino_data
-  })
 
-  let [state, setState] = useState([...data.non_veg_pizza]);
+  const data = useSelector((state) => {
+    return state.data;
+    
+  });
+  console.log(data.data);
+  let [state, setState] = useState([...data.data.non_veg_pizza]);
+ 
   // console.log(vegPizza);
 
   const sortByPrice = (e) => {
