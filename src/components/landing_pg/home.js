@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css" ;
-import {Box,Text,Heading,Image} from "@chakra-ui/react"
+import {Box,Text,Heading,Image} from "@chakra-ui/react";
+import {Link} from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -8,25 +9,25 @@ export default function Home() {
     
     <div className='header'>
 
-      <a href='https://www.dominos.co.in/'>
+      <Link to='/'>
         <img src="https://www.dominos.co.in/assets/Logo.png" alt="logoImg" />
-      </a>
+      </Link>
 
       <ul className='head-links'>
         <li>
-          <a href="/" >OUR MENU</a >
+          <Link to="/menu" >OUR MENU</Link >
         </li>
         <li>
-          <a href="/">DOMINO'S STORE</a >
+          <Link to="/menu">DOMINO'S STORE</Link >
         </li>
         <li>
-          <a href='/'>GIFT CARD</a >
+          <Link to='/menu'>GIFT CARD</Link >
         </li>
         <li>
-          <a href="/">CORPORATE ENQUIRY</a >
+          <Link to="/menu">CORPORATE ENQUIRY</Link >
         </li>
         <li>
-          <a href="/">CONTACT</a >
+          <Link to="/menu">CONTACT</Link >
         </li>
       </ul>
 

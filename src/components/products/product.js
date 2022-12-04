@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {adddata} from '../../Redux/action'
+import { adddata } from "../../Redux/action";
 import Menu from "../menu_page/menu";
-
 
 const Product = () => {
   const data = useSelector((state) => {

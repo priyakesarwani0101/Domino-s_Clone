@@ -5,7 +5,7 @@ import menubar from "../../Image/white_menu.png"
 import { useContext } from 'react'
 import { navContext } from '../../Context/NavbarContext'
 import Animation from '../Animation'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 const Navbar = () => {
   const {handleSidebar}=useContext(navContext);
   const {handleCart}=useContext(navContext);
@@ -20,14 +20,16 @@ const Navbar = () => {
   const navigate=useNavigate();
 const handle_login_status_navbar=()=>{
 
-    setUserNumber(localStorage.getItem("userLoginNumber")) ;
-    if(userNumber == ""){
-      navigate("/login") ;
-      handleLogin(false) ;
-    }else{
-      setUserNumber(userNumber) ;
-      handleLogin(true) ;
-    }
+    // setUserNumber(localStorage.getItem("userLoginNumber")) ;
+    // if(userNumber == ""){
+    //   navigate("/login") ;
+    //   handleLogin(false) ;
+    // }else{
+    //   setUserNumber(userNumber) ;
+    //   handleLogin(true) ;
+    // }
+
+    navigate("/login")
 
 }
 
@@ -57,15 +59,17 @@ if(userNumber !=""){
       <div onClick={()=>handleSidebar(!showside)}>
       <Animation/>
       </div>
-      <div>
-<img src={logo} alt="" />
+      <div><Link to="/">
+      <img src={logo} alt="" />
+      </Link>
+
       </div>
       <div>
-        <div>our menu</div>
-        <div>domino's stories</div>
-        <div>gift card</div>
-        <div>corporate enquiry</div>
-        <div>contact</div>
+        <div><Link to="/menu">our menu</Link></div>
+        <div><Link to="/menu">domino's stories</Link></div>
+        <div><Link to="/menu">gift card</Link></div>
+        <div><Link to="/menu">corporate enquiry</Link></div>
+        <div><Link to="/menu">contact</Link></div>
       </div>
       
       <div className='navbar_login_container'>
@@ -76,7 +80,7 @@ if(userNumber !=""){
     </div> :
     <div className='navbar_login_content'>
     <div>Profile</div>
-    <div onClick={handle_login_status_navbar}>Login</div>
+    <div><button onClick={handle_login_status_navbar}>Login</button></div>
     </div>
     }
   </div>

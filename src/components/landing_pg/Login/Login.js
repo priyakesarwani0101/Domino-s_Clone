@@ -12,7 +12,7 @@ import {
   import "./Login.css"
   import { useNavigate } from 'react-router-dom';
   
-  import React ,{ useState } from 'react';
+  import React ,{ useState,useEffect } from 'react';
 
   
   export default function ResetPasswordForm() {
@@ -24,9 +24,15 @@ import {
     let [flag,setFlag] = useState(true) ;
 
     let [eOTP,setEOTP] = useState('') ;
+  console.log(localStorage.getItem("userLoginNumber"))
 
-
-
+  useEffect(()=>{
+    if(localStorage.getItem("userLoginNumber")){
+      navigate("/")
+     }
+  
+  },[])
+  
 
     const check = (e)=>{
         
