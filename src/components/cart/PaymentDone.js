@@ -1,5 +1,6 @@
 import React from 'react'
-import './PaymenDone.css'
+import './PaymentDone.css'
+import {Link} from 'react-router-dom';
 
 function PaymentDone() {
   return (
@@ -9,7 +10,7 @@ function PaymentDone() {
             <h1>THANK YOU!</h1>
             <h3>Payment done Successfully!</h3>
             <span>You will be redirected to the home page shortly or click here to return to home page</span>
-            <button><span>Home</span></button>
+            <Link to="/"><button><span>Home</span></button></Link>
         </div>
     </div>
   )

@@ -24,7 +24,7 @@ import './search.css'
     }
     useEffect(()=>{
         
-        fetchdata(`http://localhost:8080/pasta?q=${query}&_limit=4`)
+        fetchdata(`http://localhost:3002/domino_data?q=${query}&_limit=4`)
     },[query])
     
     const fetchdata= async(url)=>{
@@ -32,7 +32,7 @@ import './search.css'
             const res=await fetch(url);
             const data=await res.json();
             console.log(data);
-            setData(data);
+            setData(data.veg_pizza);
             // console.log(data.length);
             // setTotalPages(Math.ceil(data.length/4));
            

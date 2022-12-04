@@ -15,6 +15,8 @@ import Payment from "./components/cart/payment";
 import Home from "./components/landing_pg/home";
 import ResetPasswordForm from "./components/landing_pg/Login/Login";
 import {AddressContext} from './components/cart/addressContext/AddressContext'
+import PaymentDone from "./components/cart/PaymentDone";
+
 // import AuthContext from "./components/landing_pg/LoginContext/LoginContext";
 
 
@@ -39,6 +41,7 @@ import {AddressContext} from './components/cart/addressContext/AddressContext'
        {/* <Route path="/address" element={<Address />}></Route> */}
        <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<ResetPasswordForm />}></Route>
+         <Route path="/paymentCompleted" element={<PaymentDone />}></Route>
       </Routes>
 
      <Footer /> 
