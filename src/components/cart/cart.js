@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './cart.css'
 import {Link} from  'react-router-dom'
+import { addressContext } from './addressContext/AddressContext'
 
 export default function Cart() {
+    const {adressfunction} =useContext(addressContext);
   return (
     <div className='cartContainer-pk'>
         <div className='cartPage-leftDiv-pk'>
@@ -97,7 +99,8 @@ export default function Cart() {
                 </div>
                 <div className='break-line-pk'></div>
                 <div className='place-btn-div-pk'>
-                    <Link to='/address'><button>Place Order</button></Link>
+                    <Link to='/address'><button onClick={()=>adressfunction(true)}>Place Order</button></Link>  
+                    {/* button */}
                 </div>
             </div>
         </div>
