@@ -1,6 +1,6 @@
 .ord-succ-cont-pk{
     /* background-color: rgb(247, 243, 239); */
-    height: 100vh;
+    /* height: 100vh; */
     background-color: ghostwhite;
     /* border: 1px solid red; */
     text-align: center;
@@ -17,10 +17,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1.5rem;
     padding-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .ord-succ-cont-pk>div>img{
-    width: 50%;
+    width: 60%;
 }
 .ord-succ-cont-pk>div>h1{
     color: rgb(85, 224, 178);
