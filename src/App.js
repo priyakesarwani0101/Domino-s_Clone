@@ -34,8 +34,8 @@ import Menu from './components/menu_page/menu'
        <Route path="/menu/pasta" element={<Pasta />}></Route>
        <Route path="/menu/sides_beverages" element={<Beverages />}></Route>
        <Route path="/cart" element={<Cart />}></Route>
-         <Route path="/address" element={<Address />}></Route>
-         <Route path="/payment" element={<Payment />}></Route>
+       <Route path="/address" element={<Address />}></Route>
+       <Route path="/payment" element={<Payment />}></Route>
 
       </Routes>
 
