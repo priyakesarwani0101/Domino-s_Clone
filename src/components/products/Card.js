@@ -1,22 +1,35 @@
 import React,{useState} from "react";
 import './product.css';
+import { useDispatch } from "react-redux";
 
 
 const Cards = ({props}) => {
- const [items,setItems] = useState([]);
-  let cartItems = [];
+ 
+//  const [items,setItems] = useState([]);
+  // let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   
-   localStorage.setItem("cartItems",JSON.stringify(cartItems));
+  //  localStorage.setItem("cartItems",JSON.stringify(cartItems));
 
-   console.log(props.id)
+  //  console.log(props.id)
    const addedToCart = ()=>{
+    
     alert("Added to cart");
-    cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-        cartItems.push(props);
+ 
+ fetch("http://localhost:3002/cartItems",
+ {
+  method:"POST",
+  body:JSON.stringify(props),
+  headers:{
+    "Content-Type":"application/json",
+  }
+ }
+ )
+    // cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        // cartItems.push(props);
 
-        localStorage.setItem("cartItems",JSON.stringify(cartItems));
-     setItems(JSON.parse(localStorage.getItem("cartItems")))
-     console.log(items);
+        // localStorage.setItem("cartItems",JSON.stringify(cartItems));
+    //  setItems(cartItems)
+    //  console.log(cartItems);
    }
 
 
@@ -40,3 +53,5 @@ const Cards = ({props}) => {
 };
 
 export default Cards;
+
+// http://localhost:3002/cartItems
