@@ -1,7 +1,17 @@
 import React from 'react'
 import './payment.css'
-
+import {useSelector} from 'react-redux';
 function Payment() {
+    const cartData=useSelector((state)=>{
+        return  state.cartArr;
+      })
+      const calculateAmount=cartData.reduce(((acc,e)=>{
+        return (e.quantity*e.price)+acc;
+      }),0)
+      
+      const coupen=localStorage.getItem("coupenApllied");
+
+    const ObjData=JSON.parse(localStorage.getItem("userAddress"))||{};
   return (
     <div className='paymentContainer-pk'>
         <div className='payment-left-div-pk'>
@@ -79,13 +89,13 @@ function Payment() {
                     <div className='addr-location-icon-div-pk'>
                         <div className='addr-location-icon-pk'></div>
                         <div className='addr-text-div-pk'>
-                            <p className='addr-location-main-pk payment-method-text-p-tag-pk'>Shivaji Nagar, Jhansi</p>
-                            <p className='addr-location-sub-pk payment-method-text-p-tag-pk'>c-74, awas vikas, shivaji nagar, Shivaji Nagar, Jhansi</p>
+                            <p className='addr-location-main-pk payment-method-text-p-tag-pk'>{ObjData.city}</p>
+                            <p className='addr-location-sub-pk payment-method-text-p-tag-pk'>{ObjData.address}</p>
                         </div>
                     </div>
                     <div className='payment-phone-div-pk'>
                         <div className='phone-icon-pk'></div>
-                        <span>8948155327</span>
+                        <span>{localStorage.getItem("userLoginNumber")}</span>
                     </div>
                 </div>
                 <span className='payment-address-title-pk'>Order Details</span>
@@ -94,11 +104,11 @@ function Payment() {
                         <div className='price-details-cont-pk'>
                             <div className='price-text-div-pk'>
                                 <span>Sub Total</span>
-                                <span>₹ 1457.00</span>
+                                <span>₹ {calculateAmount}</span>
                             </div>
                             <div className='price-text-div-pk'>
                                 <span>Discount</span>
-                                <span>-</span>
+                                <span>{coupen ? ((calculateAmount*20/100)) : 0 }</span>
                             </div>
                             <div className='price-text-div-pk'>
                                 <span className='tax-charges-cont-pk'>Taxes and Charges
@@ -106,12 +116,12 @@ function Payment() {
                                         <div className='tax-details-div-pk'><b>i</b></div>
                                     </div>
                                 </span>
-                                <span>₹ 107.85</span>
+                                <span>₹ {((calculateAmount*5/100))}</span>
                             </div>
                             <div className='break-line-pk'></div>
                             <div className='price-text-div-pk'>
                                 <span>Amount Payable</span>
-                                <span>₹ 1564.85</span>
+                                <span>₹ {coupen ? Math.floor(calculateAmount - ((calculateAmount*20)/100)+((calculateAmount*5)/100)) :calculateAmount+((calculateAmount*5)/100)}</span>
                             </div>
                             <div className='break-line-pk'></div>
                             <p className='payment-mode-note-pk'><span>Note </span>

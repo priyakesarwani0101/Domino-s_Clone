@@ -27,6 +27,7 @@ import {
             setApplied(true);
             setTimeout(()=>{
                setApplied(false);
+               localStorage.setItem("coupenApllied",true);
                props(true);
                onClose();
             },1500)
@@ -36,6 +37,7 @@ import {
             setTimeout(()=>{
               onClose();
                 setWrongCoupon(false);
+                localStorage.setItem("coupenApllied",false);
                 props(false);
              },1500)
             
