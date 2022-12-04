@@ -864,31 +864,31 @@
   },
   "cartItems": [
     {
-      "id": 1,
-      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
-      "title": "Margherita everyday ss pizza",
-      "price": 180,
-      "ratings": 3.6,
-      "quantity": 1,
-      "category": " veg_pizza"
+      "id": 706,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(10).png",
+      "title": "CHICKEN FIESTA",
+      "price": 559,
+      "ratings": 4.6,
+      "quantity": 4,
+      "category": "non_veg_pizza"
     },
     {
-      "id": 2,
-      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
-      "title": "Caprese Gourmet Pizza",
-      "price": 390,
-      "ratings": 4,
-      "quantity": 1,
-      "category": "pizza_mania"
+      "id": 705,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(15).png",
+      "title": "PEPPER BARBECUE CHICKEN",
+      "price": 455,
+      "ratings": 4.7,
+      "quantity": 2,
+      "category": "non_veg_pizza"
     },
     {
-      "id": 1015,
-      "image": "https://feenix.co.in/wp-content/uploads/2022/07/424X431pix_Fresh_Veggie-01.jpg",
-      "title": "FRESH VEGGIE",
-      "price": 110,
+      "id": 707,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+      "title": "Indi Chicken Tikka",
+      "price": 295,
       "ratings": 4.8,
       "quantity": 1,
-      "category": "pizza_mania"
+      "category": "non_veg_pizza"
     },
     {
       "id": 710,
@@ -900,32 +900,13 @@
       "category": "non_veg_pizza"
     },
     {
-      "id": 711,
-      "image": "https://www.dominos.co.in//files/items/MoroccanSpicePPNV_N.jpg",
-      "title": "Moroccan Spice Pasta Pizza - Non Veg",
-      "price": 509,
-      "ratings": 4.5,
-      "quantity": 2,
-      "category": "non_veg_pizza"
-    },
-    {
-      "id": 110,
-      "title": "Baked Rigatoni Pasta",
-      "price": 160,
-      "description": "pasta with garlicky tomato sauce, fresh basil, and gooey mozzarella.",
-      "image": "https://www.acouplecooks.com/wp-content/uploads/2020/06/Baked-Rigatoni-013-735x919.jpg",
-      "ratings": 4.5,
-      "quantity": 2,
-      "category": "veg pasta"
-    },
-    {
-      "id": 1,
-      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
-      "title": "Margherita everyday ss pizza",
-      "price": 180,
-      "ratings": 3.6,
+      "id": 1007,
+      "image": "https://www.dominos.co.in//files/items/golden_corn_veg.jpg",
+      "title": "GOLDEN CORN",
+      "price": 79,
+      "ratings": 4.8,
       "quantity": 1,
-      "category": " veg_pizza"
+      "category": "pizza_mania"
     }
   ]
 }

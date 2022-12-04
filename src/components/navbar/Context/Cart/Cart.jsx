@@ -17,10 +17,7 @@ const Cart = () => {
     return  state.cartArr;
   })
    
-  const toatlAmount=useSelector((state)=>{
-    return state.totalAmount;
-  })
-  console.log(toatlAmount);
+ 
   
   const calculateAmount=cartData.reduce(((acc,e)=>{
       return (e.quantity*e.price)+acc;
