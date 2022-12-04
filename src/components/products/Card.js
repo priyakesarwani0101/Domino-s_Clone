@@ -1,11 +1,16 @@
 import React,{useState} from "react";
 import './product.css';
-// import Button from "../Button/Button";
-import { useDispatch } from "react-redux";
-
+import { useDispatch ,useSelector} from "react-redux";
+import { addToCart } from "../../Redux/action";
 
 const Cards = ({props}) => {
  
+
+  const cartData=useSelector((state)=>{
+    return  state.cartArr;
+  })
+
+  const dispatch=useDispatch();
 //  const [items,setItems] = useState([]);
   // let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   
@@ -24,7 +29,21 @@ const Cards = ({props}) => {
     "Content-Type":"application/json",
   }
  }
+ 
+ 
  )
+
+ 
+ const fetchdata=async(url)=>{
+  try{
+    const res= await fetch(url);
+  const data=await res.json();
+  dispatch(addToCart(data))
+  }catch(e){
+    console.log(e);
+  }
+  }
+  fetchdata("http://localhost:3002/cartItems")
     // cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         // cartItems.push(props);
 

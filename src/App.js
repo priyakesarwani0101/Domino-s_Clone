@@ -14,6 +14,7 @@ import Address from "./components/cart/Address";
 import Payment from "./components/cart/payment";
 import Home from "./components/landing_pg/home";
 import ResetPasswordForm from "./components/landing_pg/Login/Login";
+import {AddressContext} from './components/cart/addressContext/AddressContext'
 // import AuthContext from "./components/landing_pg/LoginContext/LoginContext";
 
 
@@ -34,8 +35,8 @@ import ResetPasswordForm from "./components/landing_pg/Login/Login";
        <Route path="/menu/pizza_mania" element={<PizzaMania />}></Route>
        <Route path="/menu/pasta" element={<Pasta />}></Route>
        <Route path="/menu/sides_beverages" element={<Beverages />}></Route>
-       <Route path="/cart" element={<Cart />}></Route>
-       <Route path="/address" element={<Address />}></Route>
+       <Route path="/cart" element={<AddressContext />}></Route>
+       {/* <Route path="/address" element={<Address />}></Route> */}
        <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<ResetPasswordForm />}></Route>
       </Routes>

@@ -6,7 +6,9 @@
   }
   .cartPage-leftDiv-pk{
     width: 60%;
+   
     /* border: 1px solid teal; */
+    margin-left: -20%;
   }
   
   .cartPage-left-topDiv-pk{
@@ -115,7 +117,11 @@
   }
   
   .cartPage-rightDiv-pk{
-    width: 22%;
+    width: 300px;
+    position: fixed;
+    height: 600px;
+    top: 70px;
+    right: 50px;
     /* border: 1px solid teal; */
   }
   

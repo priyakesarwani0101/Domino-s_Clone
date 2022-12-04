@@ -862,5 +862,51 @@
       }
     ]
   },
-  "cartItems": []
+  "cartItems": [
+    {
+      "id": 706,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(10).png",
+      "title": "CHICKEN FIESTA",
+      "price": 559,
+      "ratings": 4.6,
+      "quantity": 4,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 705,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(15).png",
+      "title": "PEPPER BARBECUE CHICKEN",
+      "price": 455,
+      "ratings": 4.7,
+      "quantity": 2,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 707,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+      "title": "Indi Chicken Tikka",
+      "price": 295,
+      "ratings": 4.8,
+      "quantity": 1,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 710,
+      "image": "https://www.dominos.co.in//files/items/updated_keema_do_pyaza.webp",
+      "title": "Keema Do Pyaza",
+      "price": 455,
+      "ratings": 4.8,
+      "quantity": 1,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 1007,
+      "image": "https://www.dominos.co.in//files/items/golden_corn_veg.jpg",
+      "title": "GOLDEN CORN",
+      "price": 79,
+      "ratings": 4.8,
+      "quantity": 1,
+      "category": "pizza_mania"
+    }
+  ]
 }

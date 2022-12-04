@@ -1,11 +1,12 @@
 .address_container-pk{
     border: 1px solid red;
     position: fixed;
-    width: 400px;
-    height: 90vh;
-    top: 10vh;
+    width: 500px;
+    height: 100vh;
+    top: 0vh;
     right: 0;
     background-color: #fff;
+    transition: 0.3s;
 }
 
 .add-adrs-heading-pk{
@@ -18,12 +19,13 @@
 }
 .address-input-field-div-pk>p{
     /* margin: 1.88rem 2rem 0px; */
-    color: rgb(95, 136, 163);
+    color: rgb(84, 135, 168);
     font-weight: bold;
     margin-bottom: 2.5rem;
     /* border: 1px solid teal; */
 }
 .address-input-field-div-pk{
+    margin-top: 20px;
     padding: 0.2rem 2rem;
 }
 
@@ -53,27 +55,32 @@
 }
 
 .width100-pk{
-    width: 93%;
+    width: 100%;
     position: relative;
     /* margin-right: 1rem; */
 }
 .adrs-save-btn-div-pk{
     padding: 10px;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
-    /* padding: 0.6rem 0px; */
-    z-index: 99;
-    width: 25%;
-    background: rgb(101, 171, 11);
-}
-.adrs-save-btn-div-pk>button{
-    padding: 0.4rem 1.5rem;
-    align-self: center;
+    padding: 0.6rem 0px;
+    /* z-index: 99; */
     width: 100%;
     background: rgb(101, 171, 11);
+    text-align: center;
     color: white;
-    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.adrs-save-btn-div-pk>button{
+    position: relative;
+    padding: 1rem 1.5rem;
+    /* align-self: center; */
+    /* width: 100%; */
+    /* background: rgb(101, 171, 11); */
+    /* color: white; */
+    /* border: 1px solid rgb(255, 255, 255); */
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: 600;
+    /* margin: auto; */
 }
