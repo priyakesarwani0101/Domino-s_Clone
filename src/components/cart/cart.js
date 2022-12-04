@@ -1,46 +1,66 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './cart.css'
 import {Link} from  'react-router-dom'
 import { addressContext } from './addressContext/AddressContext'
-
+import { useSelector,useDispatch } from 'react-redux'
+import { CartMap } from './CartMap'
+import {addToCart} from '../../Redux/action'
+import CouponPage from '../product_details/CouponPage'
 export default function Cart() {
-    const {adressfunction} =useContext(addressContext);
+    const [coupen,setCoupen]=useState(false);
+    const {setopenAdress}=useContext(addressContext);
+    const dispatch=useDispatch();
+    const adressfunction = useContext(addressContext);
+
+     const coupenfunction=(value)=>{
+        setCoupen(value);
+     }
+
+    const cartData=useSelector((state)=>{
+        return  state.cartArr;
+      })
+
+      const calculateAmount=cartData.reduce(((acc,e)=>{
+        return (e.quantity*e.price)+acc;
+      }),0)
+
+      const fetchdata=async(url)=>{
+        try{
+          const res= await fetch(url);
+        const data=await res.json();
+        dispatch(addToCart(data))
+        }catch(e){
+          console.log(e);
+        }
+        }
+
   return (
     <div className='cartContainer-pk'>
         <div className='cartPage-leftDiv-pk'>
-            <div className='cartPage-left-topDiv-pk'><span>1 Item you have selected</span>
+            <div className='cartPage-left-topDiv-pk'><span>{cartData.length} Item you have selected</span>
                 <div><button className='cursor-pointer-pk'><span>Explore Menu</span></button></div>
             </div>
+            {
+          cartData.length>0 ? cartData.map((el,index)=>{
+            return(
+              <CartMap props={el} index={index} func={fetchdata}/>
+            )
+          }
+          )
+          :
+          null
+       }
             
-            <div className='cartItem-container-pk box-shadow-pk'>
-                <div className='cartItem-image-pk'>
-                    <img className='cursor-pointer-pk' src='https://images.dominos.co.in/cart/4623-CMB1210.jpg' />
-                </div>
-                <div className='cartItem-desc-pk'>
-                    <div>
-                        <h4 className='cart-item-title-pk'>Meal for 4: Indi Tandoori Paneer & Peppy Paneer Combo</h4>
-                        <span className='cart-item-desc-pk'>Med Indi Tandoori Paneer + Peppy Paneer + 2 Garlic Bread +2 Pepsi</span>
-                    </div>
-                    <div className='cartItem-price-buttons-pk'>
-                        <span className='cartItem-price-pk'>₹ 1099.00</span>
-                        <div className='cartItem-buttons-pk'>
-                            <div className='cursor-pointer-pk'></div>
-                            <span>1</span>
-                            <div className='cursor-pointer-pk'></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div className='cartPage-rightDiv-pk'>
-            <div className='cartPage-right-topDiv-pk'><span>Choose a delivery address</span></div>
+            
 
             <div className='address-container-pk box-shadow-pk'>
                 <div className='adrs-icon-div-pk'><div></div></div>
                 <div className='adrs-wrpr-div-pk'>
                     <div className='current-adrs-div-pk'>
-                        <p className='current-heading-pk '>Current Address</p>
-                        <p className='current-adrs-pk'>Shivaji Nagar, Jhansi</p>
+                        <p className='current-heading-pk '>Contact No.</p>
+                        <p className='current-adrs-pk'>{localStorage.getItem("userLoginNumber")}</p>
                     </div>
                     {/* <div className='edit-adrs-pk'>Edit Address</div> */}
                 </div>
@@ -50,9 +70,11 @@ export default function Cart() {
 
             <div className='select-offer-div-pk box-shadow-pk'>
                 <div className='offer-icon-pk'></div>
+
+                {/* coupen dena hi */}
                 <div className='offer-text-pk'>
-                    <span className='offer-text-upper-pk'>Select offer / Apply coupon</span>
-                    <span className='offer-text-lower-pk'>Get discount with your order</span>
+                    <CouponPage props={coupenfunction} />
+                 
                 </div>
                 <div className='offer-text-arrow-pk'></div>
             </div>
@@ -61,27 +83,27 @@ export default function Cart() {
             <div className='price-details-div-pk box-shadow-pk'>
                 <div className='price-text-wrpr-pk'>
                     <span>Sub Total</span>
-                    <span>₹ 818.00</span>
+                    <span> ₹ {calculateAmount }</span>
                 </div>
                 <div className='price-text-wrpr-pk'>
                     <span>Discount</span>
-                    <span>-</span>
+                    <span>₹ {coupen ? ((calculateAmount*20)/100) : 0}</span>
                 </div>
                 <div className='price-text-wrpr-pk'>
                     <span className='tax-span-tag-pk'>
                         Taxes and Charges
                         <div className='tax-info-div-pk'><b>i</b></div>
                     </span>
-                    <span>₹ 75.90</span>
+                    <span>{((calculateAmount*5)/100)}</span>
                 </div>
                 <div className='break-line-pk'></div>
                 <div className='price-text-wrpr-pk'>
                     <span className='text-bold-pk'>Grand Total</span>
-                    <span className='text-bold-pk'>₹ 893.90</span>
+                    <span className='text-bold-pk'> ₹ {coupen ? Math.floor(calculateAmount - ((calculateAmount*20)/100)+((calculateAmount*5)/100)) :calculateAmount+((calculateAmount*5)/100) }</span>
                 </div>
                 <div className='break-line-pk'></div>
                 <div className='place-btn-div-pk'>
-                    <Link to='/address'><button onClick={()=>adressfunction(true)}>Place Order</button></Link>  
+                    <Link to='#'><button onClick={()=>setopenAdress(true)}>Place Order</button></Link>  
                     {/* button */}
                 </div>
             </div>

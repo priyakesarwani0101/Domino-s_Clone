@@ -13,7 +13,7 @@ import {
   } from '@chakra-ui/react'
   import './coupanPage.css'
 
-  function CouponPage() {
+  function CouponPage({props}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     const [coupan,setCoupan]=React.useState('')
@@ -22,24 +22,33 @@ import {
 
 
     let CheckCoupan=()=>{
-        if(coupan==='SAM20'){
+     
+        if(coupan==='DOMINO20'){
             setApplied(true);
             setTimeout(()=>{
                setApplied(false);
+               props(true);
+               onClose();
             },1500)
         }
         else{
             setWrongCoupon(true);
             setTimeout(()=>{
+              onClose();
                 setWrongCoupon(false);
+                props(false);
              },1500)
             
         }
-
+       
+        // onClose;
     }
     return (
       <>
-        <Button onClick={onOpen}>Open Modal</Button>
+        <Box onClick={onOpen}>
+        <span className='offer-text-upper-pk'>Select offer / Apply coupon</span>
+                    <span className='offer-text-lower-pk'>Get discount with your order</span>
+        </Box>
   
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
@@ -60,7 +69,7 @@ import {
                         <Input placeholder='Coupon Code' onChange={(e) => setCoupan(e.target.value)}/>
                     </Box> 
                     <Box mt='20px'  >
-                         <Button ml='30%' color='#0d6efd' onClick={CheckCoupan}>Apply Coupon </Button>
+                         <Button ml='30%' color='#0d6efd' onClick={CheckCoupan}  >Apply Coupon </Button>
                     </Box> 
                </Box>
                </Box>

@@ -79,7 +79,7 @@ const decreaseCount=async ()=>{
                 <div>{props.description}</div>
                 <div>
                     <div> {props.category}</div>
-                    <div>₹ {props.price}</div>
+                    <div>₹ {props.price*props.quantity}</div>
                    </div>
              </div>
              </div>

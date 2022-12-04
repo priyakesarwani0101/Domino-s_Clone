@@ -4,7 +4,7 @@ import React, { useContext } from 'react'
 import { addressContext } from './addressContext/AddressContext'
 function Address() {
   const {openaddress} =useContext(addressContext);
-  const {adressfunction} =useContext(addressContext);
+  const {setopenAdress} =useContext(addressContext);
   return (
     <div className='address_container-pk' style={openaddress ? {marginRight:"0px"} : {marginRight:"-502px"} }>
         <div>
@@ -25,7 +25,7 @@ function Address() {
                     </div>
                 </div>
             </div>
-            <div className='adrs-save-btn-div-pk'><Link to="/payment"><button onClick={()=>adressfunction(false)}>SAVE & CONTINUE</button></Link></div>
+            <div className='adrs-save-btn-div-pk'><Link to="/payment"><button onClick={()=>setopenAdress(false)}>SAVE & CONTINUE</button></Link></div>
         </div>
     </div>
   )
