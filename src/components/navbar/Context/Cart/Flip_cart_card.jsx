@@ -1,18 +1,66 @@
 import React from "react";
 import { useState } from "react";
-import {useDispatch} from 'react-redux'
-import {deletecart} from '../../Redux/action'
+import {useDispatch} from 'react-redux';
+import {deletecart} from '../../../../Redux/action'
+import {incCount} from '../../../../Redux/action'
+import {decCount} from '../../../../Redux/action'
+
 import './style/cartCard.css'
-const Flip_cart_card=({props,handleDelete})=>{
+const Flip_cart_card=({props,index, func})=>{
+  const dispatch=useDispatch();
     const [rotate,setrotate]=useState(false);
     const [backrotate,setbackrotate]=useState(false);
-    const dispatch=useDispatch();
-    const handleRemoveCart=()=>{
-        
+   const cartdata= JSON.parse(localStorage.getItem("cartItems"))||[];
+const increaseCount= async ()=>{
+ await  fetch(`http://localhost:3002/cartItems/${props.id}`,
+ {
+  method:"PATCH",
+  body:JSON.stringify({
+    quantity:(props.quantity)+1
+  }),
+  headers:{
+    "Content-Type":"application/json",
+  }
+ }
+    )
+       
+        func("http://localhost:3002/cartItems")
+}
+const decreaseCount=async ()=>{
+  await fetch(`http://localhost:3002/cartItems/${props.id}`,
+ {
+  method:"PATCH",
+  body:JSON.stringify({
+    quantity:(props.quantity)-1
+  }),
+  headers:{
+    "Content-Type":"application/json",
+  }
+ }
+    )
+    func("http://localhost:3002/cartItems")
+}
+
+    const handleRemoveCart= async()=>{
+       
         setrotate(false);
-                setbackrotate(true);
-        dispatch(deletecart(props.id));
-        handleDelete(props.price);
+        setbackrotate(true);
+        
+        
+    await   fetch(`http://localhost:3002/cartItems/${props.id}`,
+        {
+         method:"DELETE",
+
+         headers:{
+           "Content-Type":"application/json",
+         }
+        }
+
+ 
+        )
+
+        func("http://localhost:3002/cartItems")
+        
     }
     return(
         <div>
@@ -37,9 +85,9 @@ const Flip_cart_card=({props,handleDelete})=>{
              </div>
              <div className="down_remove_flex">
              <div className="quantity_button">
-                <button>-</button>
-               <button >1</button>
-               <button>+</button>
+                <button disabled={props.quantity<=1 ? true : false} onClick={decreaseCount}>-</button>
+               <button >{props.quantity}</button>
+               <button onClick={increaseCount}>+</button>
              </div>
              <div>
              <button onClick={()=>{
