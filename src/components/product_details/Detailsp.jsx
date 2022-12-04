@@ -2,6 +2,8 @@ import React from 'react'
 import UncontrolledExample from './Carousel'
 import {Button,Image,Heading,Text,Textarea,DrawerFooter,Select,DrawerCloseButton,InputRightAddon,InputLeftAddon,InputGroup,Input,Box,FormLabel,Drawer,DrawerHeader,DrawerBody,DrawerOverlay,useDisclosure,Stack,DrawerContent, localStorageManager} from '@chakra-ui/react'
 import CouponPage from './CouponPage'
+import {useParams} from 'react-router-dom'
+
 // import Carousel from './Carousel'
 //  const details = () => {
 //    return (
@@ -12,15 +14,29 @@ function Detailsp() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const firstField = React.useRef()
     const sizeRef=React.useRef();
-    const[price,setPrice]=React.useState(0);
+    
     const[extraprice,setExtraPrice]=React.useState(0);
     const[size,setSize]=React.useState('Regular');
-    const[sizePrice,setSizePrice]=React.useState(0);
+    
     const[crust,setCrust]=React.useState('false');
+    const[productData,setProductData]=React.useState(500);
+    const[sizePrice,setSizePrice]=React.useState(productData);
+    const[price,setPrice]=React.useState(productData);
     let getPrice=(v)=>{
        console.log(v);
        setPrice(v);
     }
+
+    let id=useParams();
+
+       let getData= async(id)=>{
+         let res=await fetch('');
+         let data=await res.json();
+         setProductData(data);
+
+       }
+
+
   
     return (
       <>
@@ -44,7 +60,7 @@ function Detailsp() {
             {/* <DrawerHeader borderBottomWidth='1px'> */}
             <Box boxSize='sm' w="96%" h="250px" position='relative' >
                <Image ml='10px'   objectFit='cover' m='auto' src='https://images.dominos.co.in/PIZ0171.jpg' alt='Dan Abramov'  />
-               <Heading color='white' ml='50px' mt='-70px' position='absolute'>₹ {price}</Heading>
+               <Heading color='white' ml='50px' mt='-70px' position='absolute'>₹ {price }</Heading>
                </Box>
 
                <Box ml='10px'>{"The 4 Cheese Pizza"}</Box>
@@ -52,13 +68,13 @@ function Detailsp() {
                 <Box w='80%' margin='auto'>
                     <Heading size='sm'>Select Size</Heading >
                     <Box w='80%' display='flex' gap='5px'>
-                        <Box  display='flex' border='1px solid grey' onClick={()=>{setSize('Regular');setPrice(399)}} ><Image w='50%' src='https://www.slideteam.net/media/catalog/product/cache/1280x720/p/i/pizza_with_toppings_line_icon_slide01.jpg' alt='pizza icon'/>
+                        <Box  display='flex' border='1px solid grey' onClick={()=>{setSize('Regular');setPrice(productData)}} ><Image w='50%' src='https://www.slideteam.net/media/catalog/product/cache/1280x720/p/i/pizza_with_toppings_line_icon_slide01.jpg' alt='pizza icon'/>
                        <Box> <Heading size='s' >Regular</Heading>
                         <Text>Serves 1</Text></Box></Box>
-                        <Box display='flex' border='1px solid grey' onClick={()=>{setSize('Medium');setPrice(630)}}><Image w='50%' src='https://www.slideteam.net/media/catalog/product/cache/1280x720/p/i/pizza_with_toppings_line_icon_slide01.jpg' alt='pizza icon'/>
+                        <Box display='flex' border='1px solid grey' onClick={()=>{setSize('Medium');setPrice(3/2*(productData))}}><Image w='50%' src='https://www.slideteam.net/media/catalog/product/cache/1280x720/p/i/pizza_with_toppings_line_icon_slide01.jpg' alt='pizza icon'/>
                        <Box> <Heading size='s' >Medium</Heading>
                         <Text>Serves 2</Text></Box></Box>
-                        <Box display='flex' border='1px solid grey' onClick={()=>{setSize('Large');setPrice(959)}}><Image w='50%' src='https://www.slideteam.net/media/catalog/product/cache/1280x720/p/i/pizza_with_toppings_line_icon_slide01.jpg' alt='pizza icon'/>
+                        <Box display='flex' border='1px solid grey' onClick={()=>{setSize('Large');setPrice(2*(productData))}}><Image w='50%' src='https://www.slideteam.net/media/catalog/product/cache/1280x720/p/i/pizza_with_toppings_line_icon_slide01.jpg' alt='pizza icon'/>
                        <Box> <Heading size='s' >Large</Heading>
                         <Text>Serves 4</Text></Box></Box>
                     </Box>
