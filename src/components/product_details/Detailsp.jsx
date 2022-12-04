@@ -1,6 +1,7 @@
 import React from 'react'
 import UncontrolledExample from './Carousel'
 import {Button,Image,Heading,Text,Textarea,DrawerFooter,Select,DrawerCloseButton,InputRightAddon,InputLeftAddon,InputGroup,Input,Box,FormLabel,Drawer,DrawerHeader,DrawerBody,DrawerOverlay,useDisclosure,Stack,DrawerContent, localStorageManager} from '@chakra-ui/react'
+import CouponPage from './CouponPage'
 // import Carousel from './Carousel'
 //  const details = () => {
 //    return (
@@ -23,9 +24,12 @@ function Detailsp() {
   
     return (
       <>
+      <Box>
         <Button leftIcon={"ram"} colorScheme='teal' onClick={onOpen}>
           Create user
         </Button>
+        <CouponPage/>
+        </Box>
         <Drawer
           isOpen={isOpen}
           placement='left'
