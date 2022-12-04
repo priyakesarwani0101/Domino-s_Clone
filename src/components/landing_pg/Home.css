@@ -126,7 +126,8 @@
     box-shadow: 0 0 2px black;
     cursor: pointer;
     font-size: 15px;
-
+     background-color: rgb(125, 143, 163);
+     border-radius: 5px;
 }
 
 #card-span{

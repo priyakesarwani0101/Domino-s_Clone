@@ -917,6 +917,15 @@
       "ratings": 4.5,
       "quantity": 2,
       "category": "veg pasta"
+    },
+    {
+      "id": 1,
+      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+      "title": "Margherita everyday ss pizza",
+      "price": 180,
+      "ratings": 3.6,
+      "quantity": 1,
+      "category": " veg_pizza"
     }
   ]
 }
