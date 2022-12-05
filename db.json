@@ -873,15 +873,6 @@
       "category": "veg_pizza "
     },
     {
-      "id": 1,
-      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
-      "title": "Margherita everyday ss pizza",
-      "price": 180,
-      "ratings": 3.6,
-      "quantity": 1,
-      "category": " veg_pizza"
-    },
-    {
       "id": 3,
       "image": "https://i.ytimg.com/vi/fHo1j3VF7VE/maxresdefault.jpg",
       "title": "Farmhouse cheese burst pizza",
@@ -891,6 +882,43 @@
       "category": " veg_pizza"
     },
     {
+      "id": 1,
+      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+      "title": "Margherita everyday ss pizza",
+      "price": 180,
+      "ratings": 3.6,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 6,
+      "image": "https://img-global.cpcdn.com/recipes/27026a9b07074850/1200x630cq70/photo.jpg",
+      "title": "Capsicum cheese and corn pizza",
+      "price": 400,
+      "ratings": 4.1,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 5,
+      "image": "https://bizknow.in/PizzaHouse/images/Veg-Pizza/Peppy%20Paneer%20Pizza.jpg",
+      "title": "Pizza house",
+      "price": 295,
+      "ratings": 3.5,
+      "quantity": 1,
+      "category": "veg_pizza "
+    },
+    {
+      "id": 419,
+      "category": "sides_beverages",
+      "title": "Pepsi (500ml)",
+      "description": "",
+      "image": "https://images.dominos.co.in/cart/BEV0119_1.jpg",
+      "price": 60,
+      "quantity": 1,
+      "ratings": 4.2
+    },
+    {
       "id": 4,
       "image": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1",
       "title": "Peppy paneer pizza",
@@ -898,15 +926,6 @@
       "ratings": 3.9,
       "quantity": 1,
       "category": " veg_pizza"
-    },
-    {
-      "id": 11,
-      "image": "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lvhvocjkakabphxah8ll",
-      "title": "Green burst pizza",
-      "price": 290,
-      "ratings": 4.1,
-      "quantity": 1,
-      "category": "veg_pizza "
     }
   ]
 }

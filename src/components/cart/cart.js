@@ -103,7 +103,7 @@ export default function Cart() {
                 </div>
                 <div className='break-line-pk'></div>
                 <div className='place-btn-div-pk'>
-                    <Link to='#'><button onClick={()=>setopenAdress(true)}>Place Order</button></Link>  
+                    <Link to='#'><button className='cart-place-order-btn-pk' onClick={()=>setopenAdress(true)}>Place Order</button></Link>  
                     {/* button */}
                 </div>
             </div>

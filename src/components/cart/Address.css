@@ -1,12 +1,13 @@
 .address_container-pk{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: fixed;
     width: 500px;
     height: 100vh;
-    top: 0vh;
+    top: 8vh;
     right: 0;
     background-color: #fff;
     transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .add-adrs-heading-pk{
@@ -60,6 +61,7 @@
     /* margin-right: 1rem; */
 }
 .adrs-save-btn-div-pk{
+    margin-top: 34%;
     padding: 10px;
     /* position: fixed; */
     bottom: 0px;
@@ -69,7 +71,8 @@
     background: rgb(101, 171, 11);
     text-align: center;
     color: white;
-    cursor: pointer;
+    /* cursor: pointer; */
+    border-radius: 3px;
 }
 .adrs-save-btn-div-pk>button{
     position: relative;
