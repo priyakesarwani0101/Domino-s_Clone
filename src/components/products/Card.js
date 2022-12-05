@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import './product.css';
 import { useDispatch ,useSelector} from "react-redux";
 import { addToCart } from "../../Redux/action";
+import Detailsp from "../product_details/Detailsp";
 
 const Cards = ({props}) => {
  
@@ -65,7 +66,8 @@ const Cards = ({props}) => {
        <h3 style={{textAlign:"center"}}>Ratings: {props.ratings } <i class="fa-solid fa-star"></i></h3>
       <div id="cartBtn">
         {/* <Button /> */}
-        <button>Details</button>
+        {/* <button>Details</button> */}
+        <Detailsp />
         <button onClick={()=>addedToCart(props)}>Add to cart</button>
       </div>
 

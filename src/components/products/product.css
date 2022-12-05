@@ -37,14 +37,16 @@
 
 }
 #cartBtn > button{
-     border: 2px solid #095c91;
+     border: 2px solid #0b639c;
     margin-right: 10px;
     border-radius: 8px;
     padding: 4px;
-    
+    color: #0b639c;
+    background-color: #edf2f7;
 }
 #cartBtn > button:hover{
     background-color:#d8d8d8;
+   
 }
 
 
