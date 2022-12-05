@@ -1,6 +1,7 @@
 import React from "react";
 import './style/emptycart.css'
 const EmptyCart = () => {
+    
     return (
         <div className="empty_Cart_DIv" style={{ height: "100%",}}>
             <div> <img style={{ width: "80%", alignSelf: "right" }} src="https://www.blissmygift.com/public/frontend/images/empty-cart.png" alt="" /></div>
@@ -21,7 +22,7 @@ const EmptyCart = () => {
                 width: "100%",
             }}
             >Looks like you haven't added anything to your cart yet</p></div>
-            <button>Go To Menu</button>
+            <button >Go To Menu</button>
         </div>
     )
 }

@@ -11,6 +11,7 @@ import './search.css'
     const [query,setQuery]=useState("");
     const {showSearch}=useContext(navContext);
     const {handleSearch}=useContext(navContext);
+    
     const inputRef = useRef();
     const trueStyle={
        
@@ -25,7 +26,7 @@ import './search.css'
     useEffect(()=>{
         
         fetchdata(`http://localhost:3002/domino_data?q=${query}&_limit=4`)
-    },[query])
+    },[query,handleSearch])
     
     const fetchdata= async(url)=>{
         try{
@@ -70,7 +71,7 @@ import './search.css'
         </div>
         <div className="search_bar_suggestions" style={{backgroundColour:"white"}}>
   {data.length>0 & query !='' ?
-    data.map((el)=><Suggestion props={el}/>)
+    data.map((el)=><Suggestion props={el} func={clearSearch}/>)
     : null
   }
  
