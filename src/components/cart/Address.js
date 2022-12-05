@@ -27,16 +27,16 @@ function Address() {
   return (
     <div className='address_container-pk' style={openaddress ? {marginRight:"0px"} : {marginRight:"-502px"} }>
         <div>
-            <h2 className='add-adrs-heading-pk'>Add Address</h2>
+            <h2 className='add-adrs-heading-pk' style={{fontSize:"25px"}}>Add Address here</h2>
             <div className='address-input-field-div-pk'>
-                <p>Fill deatils below</p>
+                <p style={{textAlign:"center",color:"#095c91",fontSize:"20px"}}>Fill details below</p>
                 <div className='al-inp-cont-pk'>
                     <div className='flex-inp-div-pk'>
                         <input className='adrs-inp-tag-pk' type='text' placeholder='First name' name='firstName' onChange={handleChange}></input>
                         <input className='adrs-inp-tag-pk' type='text' placeholder='Last name' name="lastName"  onChange={handleChange}></input>
                     </div>
                     <div>
-                        <input className='adrs-inp-tag-pk width100-pk' type='email' placeholder='Email' name='email'  onChange={handleChange}></input>
+                        <input className='adrs-inp-tag-pk width100-pk' type='email' placeholder='Enter Email here..' name='email'  onChange={handleChange}></input>
                     </div>
                     <div className='flex-inp-div-pk'>
                         <input className='adrs-inp-tag-pk' type='text' placeholder='Flat No./Building name/Landmark' name='address' onChange={handleChange}></input>
@@ -44,7 +44,7 @@ function Address() {
                     </div>
                 </div>
             </div>
-            <div className='adrs-save-btn-div-pk'><Link to="/payment"><button onClick={handleClick}>SAVE & CONTINUE</button></Link></div>
+            <div className='adrs-save-btn-div-pk' style={{ marginTop:"-1px",borderRadius:"15px",width:"60%",margin:"auto"}}><Link to="/payment"><button onClick={handleClick}>SAVE & CONTINUE</button></Link></div>
         </div>
     </div>
   )
