@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Home.css" ;
 import {Box,Text,Heading,Image} from "@chakra-ui/react";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import Footer from '../navbar/Context/Footer/Footer'
 
 export default function Home() {
   return (
@@ -217,6 +218,8 @@ export default function Home() {
 
 
 </div>
+
+    <Footer />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import { useSelector } from "react-redux";
-
+import Footer from '../navbar/Footer/Footer'
 import Cards from "./Card";
 import './product.css';
 const PizzaMania = () => {
@@ -102,7 +102,7 @@ const PizzaMania = () => {
      : <h1>Data is empty</h1>}
      
     </div>
-
+    <Footer />
     </>
   )
 }
