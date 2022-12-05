@@ -41,8 +41,8 @@ function Detailsp() {
     return (
       <>
       <Box>
-        <Button leftIcon={"ram"} colorScheme='teal' onClick={onOpen}>
-          Create user
+        <Button   colorScheme='teal' onClick={onOpen}>
+          Details
         </Button>
          
         </Box>
