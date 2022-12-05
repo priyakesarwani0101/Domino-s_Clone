@@ -864,6 +864,11 @@
   },
   "cartItems": [
     {
+      "id": 1,
+      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+      "title": "Margherita everyday ss pizza",
+      "price": 180,
+      "ratings": 3.6,
       "id": 2,
       "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
       "title": "Caprese Gourmet Pizza",
@@ -916,6 +921,43 @@
       "ratings": 4.1,
       "quantity": 1,
       "category": " veg_pizza"
+    },
+    {
+      "id": 7,
+      "image": "https://www.spicypunch.com/wp-content/uploads/2020/07/veg-pizza.jpg",
+      "title": "Fresh veggie pizza",
+      "price": 450,
+      "ratings": 4.3,
+      "quantity": 1,
+      "category": "veg_pizza "
+    },
+    {
+      "id": 419,
+      "category": "sides_beverages",
+      "title": "Pepsi (500ml)",
+      "description": "",
+      "image": "https://images.dominos.co.in/cart/BEV0119_1.jpg",
+      "price": 60,
+      "quantity": 1,
+      "ratings": 4.2
+    },
+    {
+      "id": 4,
+      "image": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1",
+      "title": "Peppy paneer pizza",
+      "price": 385,
+      "ratings": 3.9,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 707,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+      "title": "Indi Chicken Tikka",
+      "price": 295,
+      "ratings": 4.8,
+      "quantity": 1,
+      "category": "non_veg_pizza"
     },
     {
       "id": 7,
