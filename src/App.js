@@ -28,6 +28,7 @@ import PaymentDone from "./components/cart/PaymentDone";
    return (
     <div className="App">
       
+      
        <NavbarContext />
      
       <Routes>
@@ -39,7 +40,7 @@ import PaymentDone from "./components/cart/PaymentDone";
        <Route path="/menu/pasta" element={<Pasta />}></Route>
        <Route path="/menu/sides_beverages" element={<Beverages />}></Route>
        <Route path="/cart" element={<AddressContext />}></Route>
-       {/* <Route path="/address" element={<Address />}></Route> */}
+      
        <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<ResetPasswordForm />}></Route>
          <Route path="/paymentCompleted" element={<PaymentDone />}></Route>

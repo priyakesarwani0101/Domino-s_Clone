@@ -23,7 +23,7 @@
 .sidebar>div{
     text-transform: uppercase;
     text-align: left;
-    
+    display: flex;
    padding: 20px 0px 0px 15px;
     /* border: 1px solid teal; */
     margin-bottom: 10px;
@@ -41,6 +41,6 @@
     width: 20px;
     height: 20px;
 }
-.sidebar>div>span{
+.sidebar>div>div{
     margin-left: 15px;
 }

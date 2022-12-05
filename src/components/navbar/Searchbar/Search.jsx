@@ -11,7 +11,8 @@ import './search.css'
     const [query,setQuery]=useState("");
     const {showSearch}=useContext(navContext);
     const {handleSearch}=useContext(navContext);
-    const reference=useRef(null);
+    // const[clear,setClear]=useState(false);
+    const inputRef = useRef();
     const trueStyle={
        
         marginTop: "50px",
@@ -33,15 +34,24 @@ import './search.css'
             const data=await res.json();
             console.log(data);
             setData(data);
-            // console.log(data.length);
-            // setTotalPages(Math.ceil(data.length/4));
-           
+          
         }
         catch(e){
       console.log(e);
         }
     }
     
+    const clearSearch =()=>{
+        setQuery("");
+        inputRef.current.value("");
+        handleSearch(false);
+       
+    }
+    const handleChange =(e)=>{
+        setQuery(e.target.value);
+         
+        
+    }
     // {showSearch ? reference.current.focus():null}
     return (
         <>
@@ -49,10 +59,10 @@ import './search.css'
             <div className="search">
             <div className="searchicon" ></div>
               <div className="input">
-                  <input  type="text"  placeholder="Search" id="mySearch" autoFocus={showSearch ? true: false} onChange={(e)=>{setQuery(e.target.value)}} />
+                  <input  type="text" ref={inputRef}  placeholder="Search" id="mySearch" autoFocus={showSearch ? true: false} onChange={handleChange} />
               
             </div>
-            <span className="search_clear" onClick={()=>handleSearch(false)}></span>
+            <span className="search_clear" onClick={clearSearch}></span>
             
         </div>
         <div className="search_bar_suggestions" style={{backgroundColour:"white"}}>
