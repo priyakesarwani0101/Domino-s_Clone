@@ -1,7 +1,7 @@
 import logo from'../../Image/domino_logo.png'
 import React, { useState } from 'react'
 import './Style/navbar.css'
-import menubar from "../../Image/white_menu.png"
+// import menubar from "../../Image/white_menu.png"
 import { useContext } from 'react'
 import { navContext } from '../../Context/NavbarContext'
 import Animation from '../Animation'
@@ -71,11 +71,11 @@ const handle_logout_status_navbar=()=>{
 
       </div>
       <div>
-        <div><Link to="/menu">our menu</Link></div>
-        <div><Link to="/menu">domino's stories</Link></div>
-        <div><Link to="/menu">gift card</Link></div>
-        <div><Link to="/menu">corporate enquiry</Link></div>
-        <div><Link to="/menu">contact</Link></div>
+        <div><Link to="/menu" style={{color:"white"}}>our menu</Link></div>
+        <div><Link to="/menu" style={{color:"white"}}>domino's stories</Link></div>
+        <div><Link to="/menu" style={{color:"white"}}>gift card</Link></div>
+        <div><Link to="/menu" style={{color:"white"}}>corporate enquiry</Link></div>
+        <div><Link to="/menu" style={{color:"white"}}>contact</Link></div>
       </div>
       
       <div className='navbar_login_container'>

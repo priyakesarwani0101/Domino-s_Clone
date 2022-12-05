@@ -76,7 +76,7 @@ const decreaseCount=async ()=>{
              </div>
              <div className="cart_details" style={{marginLeft:"8px"}}>
                 <div>{props.title}</div>
-                <div>{props.description}</div>
+                <div>{`This easy ${props.title} pairs spaghetti with colorful roasted veggies! It’s a healthy dinner idea for loading up on the good stuff.`}</div>
                 <div>
                     <div> {props.category}</div>
                     <div>₹ {props.price*props.quantity}</div>

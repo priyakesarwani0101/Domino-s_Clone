@@ -65,7 +65,7 @@ import './search.css'
             <span className="search_clear" onClick={clearSearch}></span>
             
         </div>
-        <div className="search_bar_suggestions" style={{backgroundColour:"white"}}>
+        <div className="search_bar_suggestions" >
   {data.length>0 & query !='' ?
     data.map((el)=><Suggestion props={el}/>)
     : null
