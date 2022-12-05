@@ -31,6 +31,7 @@ import DebitMode from './components/cart/DebitMode';
 
    return (
     <div className="App">
+       
       
       
        <NavbarContext />
