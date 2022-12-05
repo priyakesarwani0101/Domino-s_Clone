@@ -2,6 +2,7 @@ import React from 'react'
 import './payment.css'
 import {useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 
 function Payment() {
     const cartData=useSelector((state)=>{
@@ -24,24 +25,24 @@ function Payment() {
                     <div className='payment-method-left-pk'>
                         <div className='payment-icon-dtl-pk'>
                             <div className='payment-icon-pk cash-mode-icon-url-pk'></div>
-                            <span className='payment-method-text-pk'>
+                            <Link to='/payment'><span className='payment-method-text-pk'>
                                 <p className='payment-method-text-p-tag-pk'>cash on</p>
                                 <p className='payment-method-text-p-tag-pk'>delivery</p>
-                            </span>
+                            </span></Link>
                         </div>
                         <div className='payment-icon-dtl-pk'>
                             <div className='payment-icon-pk credit-card-mode-icon-url-pk'></div>
-                            <span className='payment-method-text-pk'>
+                            <Link to ='/payment/credit'><span className='payment-method-text-pk'>
                                 <p className='payment-method-text-p-tag-pk'>credit</p>
                                 <p className='payment-method-text-p-tag-pk'>card</p>
-                            </span>
+                            </span></Link>
                         </div>
                         <div className='payment-icon-dtl-pk'>
                             <div className='payment-icon-pk debit-card-mode-icon-url-pk'></div>
-                            <span className='payment-method-text-pk'>
+                            <Link to = '/payment/debit'><span className='payment-method-text-pk'>
                                 <p className='payment-method-text-p-tag-pk'>debit</p>
                                 <p className='payment-method-text-p-tag-pk'>card</p>
-                            </span>
+                            </span></Link>
                         </div>
                         <div className='payment-icon-dtl-pk'>
                             <div className='payment-icon-pk net-banking-mode-icon-url-pk'></div>
@@ -67,9 +68,10 @@ function Payment() {
                     </div>
 
                     <div className='payment-method-right-pk' style={{marginBottom:"20px"}}>
-
-                        <div className='cash-payment-option-show-pk'>
+                    <div><Outlet></Outlet></div>
+                        {/* <div className='cash-payment-option-show-pk'>
                             <div className='cash-payment-option-img-pk'></div>
+                           
                             <span className='payment-mode-desc-pk'>
                                 <p>If you wish to pay</p>
                                 <p>through cash</p>
@@ -77,7 +79,7 @@ function Payment() {
                             <div className='confirm-order-btn-div-pk'>
                                 <Link to="/paymentCompleted"><button className='cash-confirm-btn-pk'><span>Confirm Order</span></button></Link>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

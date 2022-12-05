@@ -1,5 +1,6 @@
 import React from 'react'
 import './CreditMode.css'
+import {Link} from 'react-router-dom';
 
 function CreditMode() {
   return (
@@ -61,12 +62,12 @@ function CreditMode() {
             <input className='card-no-inp-tag-pk' type='text' placeholder='NAME ON CARD'></input>
           </div>
           <div>
-            <input className='card-no-inp-tag-pk credit-cvv-input-tag-pk' type='text' placeholder='CVV'></input>
+            <input className='card-no-inp-tag-pk credit-cvv-input-tag-pk' type='password' placeholder='CVV'></input>
             <img className='credit-cvv-img-tag-pk' src='https://pizzaonline.dominos.co.in/static/assets/icons/cvv.png'></img>
           </div>
         </div>
         <div className='credit-pay-btn-div-pk'>
-          <button className='credit-pay-btn-pk'><span>PAY NOW</span></button>
+          <Link to='/paymentCompleted'><button className='credit-pay-btn-pk'><span>PAY NOW</span></button></Link>
         </div>
     </div>
   )

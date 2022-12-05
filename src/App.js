@@ -17,6 +17,9 @@ import Home from "./components/landing_pg/home";
 import ResetPasswordForm from "./components/landing_pg/Login/Login";
 import {AddressContext} from './components/cart/addressContext/AddressContext'
 import PaymentDone from "./components/cart/PaymentDone";
+import Cash from './components/cart/Cash';
+import CreditMode from './components/cart/CreditMode';
+import DebitMode from './components/cart/DebitMode';
 
 
 // import AuthContext from "./components/landing_pg/LoginContext/LoginContext";
@@ -41,10 +44,14 @@ import PaymentDone from "./components/cart/PaymentDone";
        <Route path="/menu/pasta" element={<Pasta />}></Route>
        <Route path="/menu/sides_beverages" element={<Beverages />}></Route>
        <Route path="/cart" element={<AddressContext />}></Route>
-      
-       <Route path="/payment" element={<Payment />}></Route>
+       <Route path="/payment" element={<Payment />}>
+        <Route path="/payment/" element={<Cash />}></Route>
+        <Route path="/payment/debit" element={<DebitMode />}></Route>
+        <Route path="/payment/credit" element={<CreditMode />}></Route>
+       </Route>
         <Route path="/login" element={<ResetPasswordForm />}></Route>
          <Route path="/paymentCompleted" element={<PaymentDone />}></Route>
+         
       </Routes>
 
     
