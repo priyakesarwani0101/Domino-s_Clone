@@ -864,11 +864,6 @@
   },
   "cartItems": [
     {
-      "id": 1,
-      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
-      "title": "Margherita everyday ss pizza",
-      "price": 180,
-      "ratings": 3.6,
       "id": 2,
       "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
       "title": "Caprese Gourmet Pizza",
