@@ -2,6 +2,7 @@
 
 # dependencies
 package-lock.json
+db.json
 node_modules
 /.pnp
 .pnp.js

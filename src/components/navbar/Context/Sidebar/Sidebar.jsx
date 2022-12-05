@@ -2,7 +2,7 @@ import React from "react";
 import "./style/sidebar.css";
 import { navContext } from "../../Context/NavbarContext";
 import { useContext } from "react";
-
+import {Link} from 'react-router-dom'
 import track from '../../Image/order_track.png'
 import pizza from '../../Image/pizza.png'
 import home from '../../Image/home_icon.png'
@@ -23,32 +23,32 @@ const Sidebar = () => {
       >
         <div>   
           <img src={track} alt="" />
-          <div>track Current order</div></div>
+          <div><Link to="/menu/veg_pizza">track Current order</Link></div></div>
         <div>
         <img src={pizza} alt="" />
-          <div>order history</div></div>
+          <div><Link to="/">order history</Link></div></div>
         <div>
         <img src={home} alt="" />
-          <div>home</div>
+          <div> <Link to="/">home</Link></div>
           </div>
         <div>
         <img src={offer} alt="" />
-          <div>deals & offers</div></div>
+          <div><Link to='/menu'>deals & offers</Link></div></div>
         <div>
         <img src={menu} alt="" />
-          <div>menu</div></div>
+          <div><Link to="/menu">menu</Link></div></div>
         <div>
         <img src={gift} alt="" />
-          <div>everyday value offers</div></div>
+          <div><Link to='/menu'>everyday value offers</Link></div></div>
         <div>
         <img src={terms} alt="" />
           <div>terms & condition</div></div>
         <div>
         <img src={comment} alt="" />
-          <div>Feedback</div></div>
+          <div><Link to='/'>Feedback</Link></div></div>
         <div>
         <img src={pizza} alt="" />
-          <div>contact us</div></div>
+          <div><Link to='/'>contact us</Link></div></div>
       </div>
       
     </>

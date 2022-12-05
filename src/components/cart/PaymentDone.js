@@ -10,7 +10,7 @@ function PaymentDone() {
             <h1>THANK YOU!</h1>
             <h3>Payment done Successfully!</h3>
             <span>You will be redirected to the home page shortly or click here to return to home page</span>
-            <Link to="/"><button><span>Home</span></button></Link>
+            <Link to="/"><button style={{color:"white",backgroundColor:"#55e0b2",borderRadius:"6px",padding:"8px"}}><span>Home</span></button></Link>
         </div>
     </div>
   )

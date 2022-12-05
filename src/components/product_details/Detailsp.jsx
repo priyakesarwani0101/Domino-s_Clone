@@ -5,6 +5,7 @@ import CouponPage from './CouponPage'
 import {useParams} from 'react-router-dom'
 import {useDispatch,useSelector} from 'react-redux'
 import {addToCart} from '../../Redux/action'
+import './Detailsp.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Carousel from './Carousel'
@@ -101,7 +102,7 @@ function Detailsp({props}) {
           
         >
           <DrawerOverlay />
-          <DrawerContent overflowY='scroll'    >
+          <DrawerContent overflowY='scroll'  className="drawer"  >
             {/* <DrawerCloseButton /> */}
             {/* <DrawerHeader borderBottomWidth='1px'> */}
             <Box boxSize='sm' w="96%" h="250px" position='relative' >
