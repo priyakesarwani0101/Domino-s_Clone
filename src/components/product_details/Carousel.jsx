@@ -3,6 +3,7 @@ import {Box,Text} from '@chakra-ui/react'
 import React from 'react'
 import {useState,useRef} from 'react'
 import './carousel.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function UncontrolledExample(props) {
   let price=props.price;

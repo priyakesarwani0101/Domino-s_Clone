@@ -2,10 +2,12 @@ import React,{useState} from "react";
 import './product.css';
 import { useDispatch ,useSelector} from "react-redux";
 import { addToCart } from "../../Redux/action";
+import Detailsp from "../product_details/Detailsp";
+import { Box } from "@chakra-ui/react";
 
 const Cards = ({props}) => {
+ const [added,setAdded] = useState(false);
  
-
   const cartData=useSelector((state)=>{
     return  state.cartArr;
   })
@@ -18,8 +20,11 @@ const Cards = ({props}) => {
 
   //  console.log(props.id)
    const addedToCart = ()=>{
-    
-    alert("Added to cart");
+     setAdded(true);
+    // alert("Added to cart");
+     setTimeout(() => {
+       setAdded(false)
+     }, 2000);
  
  fetch("http://localhost:3002/cartItems",
  {
@@ -65,10 +70,14 @@ const Cards = ({props}) => {
        <h3 style={{textAlign:"center"}}>Ratings: {props.ratings } <i class="fa-solid fa-star"></i></h3>
       <div id="cartBtn">
         {/* <Button /> */}
-        <button>Details</button>
-        <button onClick={()=>addedToCart(props)}>Add to cart</button>
+        {/* <button>Details</button> */}
+        <Detailsp />
+        <button onClick={()=>addedToCart(props)} >Add to cart</button>
       </div>
 
+      {added ? <Box className='addToCartBtn' position='fixed' top='15%' left='45%' zIndex='50' bgColor='#0b639c' color='white' padding='1%' fontSize='1.3rem' borderRadius='8px' >
+            Added to cart
+        </Box> : null}
       
     </div>
   );

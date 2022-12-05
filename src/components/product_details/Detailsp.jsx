@@ -3,6 +3,7 @@ import UncontrolledExample from './Carousel'
 import {Button,Image,Heading,Text,Textarea,DrawerFooter,Select,DrawerCloseButton,InputRightAddon,InputLeftAddon,InputGroup,Input,Box,FormLabel,Drawer,DrawerHeader,DrawerBody,DrawerOverlay,useDisclosure,Stack,DrawerContent, localStorageManager} from '@chakra-ui/react'
 import CouponPage from './CouponPage'
 import {useParams} from 'react-router-dom'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import Carousel from './Carousel'
 //  const details = () => {
@@ -41,23 +42,26 @@ function Detailsp() {
     return (
       <>
       <Box>
-        <Button   colorScheme='teal' onClick={onOpen}>
-          Details
+        <Button  color="#0b639c" border="2px solid #0b639c" onClick={onOpen}>
+         Details
         </Button>
          
         </Box>
-        <Drawer
+        <Drawer 
           isOpen={isOpen}
           placement='left'
           initialFocusRef={firstField}
           onClose={onClose}
           size='lg'
+          height="500px"
           overflow-y='scroll'
+          
         >
           <DrawerOverlay />
-          <DrawerContent overflowY='scroll'>
-             
-            <Box boxSize='sm' w="96%" h="250px" position='relative' >
+          <DrawerContent overflowY='scroll' border="3px solid green"  height="650px">
+            {/* <DrawerCloseButton /> */}
+            {/* <DrawerHeader borderBottomWidth='1px'> */}
+            {/* <Box boxSize='sm' w="96%" h="250px" position='relative' >
                <Image ml='10px'   objectFit='cover' m='auto' src='https://images.dominos.co.in/PIZ0171.jpg' alt='Dan Abramov'  />
                <Heading color='white' ml='50px' mt='-70px' position='absolute'>₹ {price }</Heading>
                </Box>
@@ -93,7 +97,7 @@ function Detailsp() {
                         <span style={{backgroundColor:'green',color:'white'}}> ₹ {price}</span></Box></Box>
                     </Box>
                 </Box>
-                <Box ml='60px'><Heading size='sm'>Add Veg Toppings @  ₹ 50.00 each  </Heading> </Box>
+                <Box ml='60px'><Heading size='sm'>Add Veg Toppings @  ₹ 50.00 each  </Heading> </Box> */}
                 <Box>
                     <UncontrolledExample  price={{price,getPrice}}/>
                 </Box>

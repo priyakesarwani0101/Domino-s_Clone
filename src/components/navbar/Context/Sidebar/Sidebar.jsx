@@ -23,32 +23,32 @@ const Sidebar = () => {
       >
         <div>   
           <img src={track} alt="" />
-          <span>track Current order</span></div>
+          <div>track Current order</div></div>
         <div>
         <img src={pizza} alt="" />
-          <span>order history</span></div>
+          <div>order history</div></div>
         <div>
         <img src={home} alt="" />
-          <span>home</span>
+          <div>home</div>
           </div>
         <div>
         <img src={offer} alt="" />
-          <span>deals & offers</span></div>
+          <div>deals & offers</div></div>
         <div>
         <img src={menu} alt="" />
-          <span>menu</span></div>
+          <div>menu</div></div>
         <div>
         <img src={gift} alt="" />
-          <span>everyday value offers</span></div>
+          <div>everyday value offers</div></div>
         <div>
         <img src={terms} alt="" />
-          <span>terms & condition</span></div>
+          <div>terms & condition</div></div>
         <div>
         <img src={comment} alt="" />
-          <span>Feedback</span></div>
+          <div>Feedback</div></div>
         <div>
         <img src={pizza} alt="" />
-          <span>contact us</span></div>
+          <div>contact us</div></div>
       </div>
       
     </>

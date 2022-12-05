@@ -47,28 +47,17 @@
   }
   .cartItem-image-pk{
     /* border: 1px solid greenyellow; */
-    width: 6.6rem;
+    width: 7.2rem;
     height: 6.6rem;
     position: relative;
     margin: 1rem;
   }
   .cartItem-image-pk>img{
     width: 100%;
+    height: 100%;
     border-radius: 3px;
   }
-  .cart-item-desc-pk{
-    font-size: 0.9rem;
-    color: rgb(100, 129, 143);
-    padding: 0.5rem 0px;
-    width: 60%;
-    display: block;
-  }
-  .cart-item-title-pk{
-    margin-bottom: -5px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    display: block;
-  }
+  
   .cartItem-desc-pk{
     width: 80%;
     display: flex;
@@ -77,13 +66,28 @@
     margin-right: 15px;
   }
   .cartItem-desc-pk>div:first-child{
-    margin-top: -10px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .cart-item-desc-pk{
+    /* border: 1px solid teal; */
+    font-size: 0.9rem;
+    color: rgb(100, 129, 143);
+    padding: 0.5rem 0px;
+    width: 70%;
+    display: block;
+  }
+  .cart-item-title-pk{
+    margin-bottom: -5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
   }
   .cartItem-price-buttons-pk{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
+    /* justify-content: center; */
+    margin-top: 20px;
   }
   .cartItem-buttons-pk{
     display: flex;
@@ -120,7 +124,7 @@
     width: 300px;
     position: fixed;
     height: 600px;
-    top: 70px;
+    /* top: 70px; */
     right: 50px;
     /* border: 1px solid teal; */
   }
@@ -139,7 +143,7 @@
     text-align: -webkit-center;
   }
   .adrs-icon-div-pk>div{
-    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/location_pin.png);
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/myprofile_phone-call.svg);
     min-height: 0.3em;
     background-repeat: no-repeat;
     margin-right: 0px;
@@ -147,7 +151,7 @@
     width: 1rem;
     height: 1.5rem;
     background-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
   
   .adrs-wrpr-div-pk{
@@ -300,8 +304,11 @@
     width: 100%;
     align-self: center;
     margin: 1rem 0px 0.5rem;
+    background: rgb(130, 187, 55);
+    text-align: center;
+    color: white;
   }
-  .place-btn-div-pk>button{
+  .cart-place-order-btn-pk{
     padding: 0.7rem 1.5rem;
     width: 100%;
     height: 2.5rem;
