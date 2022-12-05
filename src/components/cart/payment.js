@@ -1,6 +1,8 @@
 import React from 'react'
 import './payment.css'
 import {useSelector} from 'react-redux';
+import {Link} from 'react-router-dom';
+
 function Payment() {
     const cartData=useSelector((state)=>{
         return  state.cartArr;
@@ -73,7 +75,7 @@ function Payment() {
                                 <p>through cash</p>
                             </span>
                             <div className='confirm-order-btn-div-pk'>
-                                <button className='cash-confirm-btn-pk'><span>Confirm Order</span></button>
+                                <Link to="/paymentCompleted"><button className='cash-confirm-btn-pk'><span>Confirm Order</span></button></Link>
                             </div>
                         </div>
 

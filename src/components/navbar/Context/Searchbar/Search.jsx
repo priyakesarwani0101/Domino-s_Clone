@@ -11,7 +11,7 @@ import './search.css'
     const [query,setQuery]=useState("");
     const {showSearch}=useContext(navContext);
     const {handleSearch}=useContext(navContext);
-    const reference=useRef(null);
+    const inputRef = useRef();
     const trueStyle={
        
         marginTop: "50px",
@@ -24,7 +24,7 @@ import './search.css'
     }
     useEffect(()=>{
         
-        fetchdata(`http://localhost:8080/pasta?q=${query}&_limit=4`)
+        fetchdata(`http://localhost:3002/domino_data?q=${query}&_limit=4`)
     },[query])
     
     const fetchdata= async(url)=>{
@@ -32,7 +32,7 @@ import './search.css'
             const res=await fetch(url);
             const data=await res.json();
             console.log(data);
-            setData(data);
+            setData(data.veg_pizza);
             // console.log(data.length);
             // setTotalPages(Math.ceil(data.length/4));
            
@@ -40,6 +40,19 @@ import './search.css'
         catch(e){
       console.log(e);
         }
+    }
+
+    const clearSearch =()=>{
+        setQuery("");
+        handleSearch(false);
+        inputRef.current.value="";
+        
+       
+    }
+    const handleChange =(e)=>{
+        setQuery(e.target.value);
+         
+        
     }
     
     // {showSearch ? reference.current.focus():null}
@@ -49,10 +62,10 @@ import './search.css'
             <div className="search">
             <div className="searchicon" ></div>
               <div className="input">
-                  <input  type="text"  placeholder="Search" id="mySearch" autoFocus={showSearch ? true: false} onChange={(e)=>{setQuery(e.target.value)}} />
+                  <input  type="text" ref={inputRef} placeholder="Search" id="mySearch" autoFocus={showSearch ? true: false} onChange={handleChange} />
               
             </div>
-            <span className="search_clear" onClick={()=>handleSearch(false)}></span>
+            <span className="search_clear" onClick={clearSearch}></span>
             
         </div>
         <div className="search_bar_suggestions" style={{backgroundColour:"white"}}>

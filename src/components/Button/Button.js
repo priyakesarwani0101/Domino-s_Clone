@@ -1,35 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Button.css";
 
 const Button = () => {
-  // let btn_comp = document.getElementById("btn_comp");
-  // let btnTxt = document.getElementById("btn_txt");
-
-  // btn_comp.onclick = () => {
-  //   btnTxt.innerText = "Thanks";
-  //   btn_comp.classList.add("active");
-  // };
-
-  // let geDetails = ()=>{
-  //   let btn_comp = document.getElementById("btn_comp");
-  // let btnTxt = document.getElementById("btn_txt");
-
-  //   btnTxt.innerText = "Thanks";
-  //   btn_comp.classList.add("active");
-  // }
+  const [changeName,setChangeName]=useState(false);
+  const [changeClass,setChangeClass]=useState("add-btn");
+  let btn=document.getElementById("btn");
+  
+ const handleClick=()=>{
+  setChangeName(true);
+  // btn.classList.add("active");
+  setChangeClass("active_btn")
+  }
 
   return (
-    <div>
-      <div class="hero">
-        <button id="btn_comp" onClick={geDetails}>
-          <p id="btn_txt">Submit</p>
-          <div class="check-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-            </svg>
-          </div>
+    <div class="hero_btn">
+        <button className={changeClass} onClick={handleClick}>
+           <p className="btn_txt">{changeName ? "Added to Cart" : "Adde to Cart"}</p>
+           <div className="cart-check-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+             </svg>
+        </div>
         </button>
-      </div>
+
     </div>
   );
 };
