@@ -7,7 +7,7 @@ const Loading = () => {
       return (
          
           
-            <Box  h='1200px'>
+            <Box  h='600px'>
               <Image w='100%' h='100%' m='auto'   src={priya} alt='gif'/>
                {/* <Heading  fontSize='100px' letterSpacing='2px' color='blue' textAlign='center'>Thank You From Domino'S Team</Heading> */}
             </Box>

@@ -23,32 +23,32 @@ const Sidebar = () => {
       >
         <div>   
           <img src={track} alt="" />
-          <div><Link to="/menu/veg_pizza">track Current order</Link></div></div>
+          <div><Link to="/menu/veg_pizza" style={{color:"black"}}>track Current order</Link></div></div>
         <div>
         <img src={pizza} alt="" />
-          <div><Link to="/">order history</Link></div></div>
+          <div><Link to="/" style={{color:"black"}}>order history</Link></div></div>
         <div>
         <img src={home} alt="" />
-          <div> <Link to="/">home</Link></div>
+          <div> <Link to="/" style={{color:"black"}}>home</Link></div>
           </div>
         <div>
         <img src={offer} alt="" />
-          <div><Link to='/menu'>deals & offers</Link></div></div>
+          <div><Link to='/menu' style={{color:"black"}}>deals & offers</Link></div></div>
         <div>
         <img src={menu} alt="" />
-          <div><Link to="/menu">menu</Link></div></div>
+          <div><Link to="/menu" style={{color:"black"}}>menu</Link></div></div>
         <div>
         <img src={gift} alt="" />
-          <div><Link to='/menu'>everyday value offers</Link></div></div>
+          <div><Link to='/menu' style={{color:"black"}}>everyday value offers</Link></div></div>
         <div>
         <img src={terms} alt="" />
-          <div>terms & condition</div></div>
+          <div><Link to='/' style={{color:"black"}}>terms & condition</Link></div></div>
         <div>
         <img src={comment} alt="" />
-          <div><Link to='/'>Feedback</Link></div></div>
+          <div><Link to='/' style={{color:"black"}}>Feedback</Link></div></div>
         <div>
         <img src={pizza} alt="" />
-          <div><Link to='/'>contact us</Link></div></div>
+          <div><Link to='/' style={{color:"black"}}>contact us</Link></div></div>
       </div>
       
     </>
