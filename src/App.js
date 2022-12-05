@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarContext from "./components/navbar/Context/NavbarContext";
 import Footer from "./components/footer/Footer/Footer";
 import {Routes,Route} from 'react-router-dom'
@@ -54,4 +55,5 @@ import PaymentDone from "./components/cart/PaymentDone";
  }
 
  export default App;
+
 

@@ -882,13 +882,20 @@
       "category": " veg_pizza"
     },
     {
-      "id": 1,
-      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
-      "title": "Margherita everyday ss pizza",
-      "price": 180,
-      "ratings": 3.6,
+      "id": 703,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png",
+      "title": "Chicken Dominator",
+      "price": 609,
+      "ratings": 4.8,
       "quantity": 1,
-      "category": " veg_pizza"
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 1018,
+      "image": "https://feenix.co.in/wp-content/uploads/2022/07/mexican_green_wave.jpg",
+      "title": "MEXICAN GREEN WAVE",
+      "price": 260,
+      "ratings": 4.8
     },
     {
       "id": 6,
@@ -925,7 +932,7 @@
       "price": 385,
       "ratings": 3.9,
       "quantity": 1,
-      "category": " veg_pizza"
+      "category": "pizza_mania"
     }
   ]
 }
