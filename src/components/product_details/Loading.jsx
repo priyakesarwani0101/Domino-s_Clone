@@ -7,7 +7,7 @@ const Loading = () => {
         height:'730px',
         p: '10',
         background:
-          'url(https://img.freepik.com/premium-vector/soft-multicolor-vector-background-with-meshes-eps10_147066-362.jpg?w=900) center/cover no-repeat',
+          'url(https://media.tenor.com/tNFIwasgcS4AAAAC/pizza-delivery-spongebob-squarepants.gif) center/cover no-repeat',
       }
     
       const innerBoxStyles = {
@@ -28,7 +28,7 @@ const Loading = () => {
           {/* adding backdrop-blur property to the element */}
           <Box sx={outerBoxStyles}>
             <Box sx={innerBoxStyles} backdropFilter='auto' backdropBlur='8px'>
-              Box with Backdrop Blur
+              {/* <Image src='https://www.icegif.com/wp-content/uploads/pizza-icegif.gif' alt='gif'/> */}
             </Box>
           </Box>
            

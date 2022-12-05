@@ -56,8 +56,7 @@ function Detailsp() {
         >
           <DrawerOverlay />
           <DrawerContent overflowY='scroll'>
-            {/* <DrawerCloseButton /> */}
-            {/* <DrawerHeader borderBottomWidth='1px'> */}
+             
             <Box boxSize='sm' w="96%" h="250px" position='relative' >
                <Image ml='10px'   objectFit='cover' m='auto' src='https://images.dominos.co.in/PIZ0171.jpg' alt='Dan Abramov'  />
                <Heading color='white' ml='50px' mt='-70px' position='absolute'>₹ {price }</Heading>
