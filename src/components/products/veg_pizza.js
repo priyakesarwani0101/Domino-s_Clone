@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import Cards from "./Card";
 import "./product.css";
+import Footer from '../navbar/Footer/Footer'
 
 const VegPizza = () => {
   const data = useSelector((state) => {
@@ -97,6 +98,7 @@ const VegPizza = () => {
           <h1>Data is empty</h1>
         )}
       </div>
+      <Footer />
     </>
   );
 };

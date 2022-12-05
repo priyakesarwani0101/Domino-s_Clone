@@ -47,7 +47,7 @@ import PaymentDone from "./components/cart/PaymentDone";
          <Route path="/paymentCompleted" element={<PaymentDone />}></Route>
       </Routes>
 
-     <Footer /> 
+    
 
     </div>
 
