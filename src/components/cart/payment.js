@@ -17,7 +17,7 @@ function Payment() {
   return (
     <div className='paymentContainer-pk'>
         <div className='payment-left-div-pk'>
-            <div><span className='payment-left-top-heading-pk'>Payment Method</span></div>
+            <div style={{marginBottom:"-10px"}}><span className='payment-left-top-heading-pk'  style={{fontSize:"30px"}}>Payment Gateway:</span></div>
 
             <div className='payment-method-container-pk box-shadow-pk'>
                 <div className='payment-method-div-pk'>
@@ -66,7 +66,7 @@ function Payment() {
                         </div>
                     </div>
 
-                    <div className='payment-method-right-pk'>
+                    <div className='payment-method-right-pk' style={{marginBottom:"20px"}}>
 
                         <div className='cash-payment-option-show-pk'>
                             <div className='cash-payment-option-img-pk'></div>
@@ -86,8 +86,8 @@ function Payment() {
 
         <div className='payment-right-div-pk'>
             <div>
-                <span className='payment-address-title-pk'>Delivery Address</span>
-                <div className='payment-addr-cont-pk box-shadow-pk'>
+                <b><p style={{backgroundColor:"#29b53c",marginLeft:"10px",marginBottom:"7px",marginTop:"10px",color:"white",textAlign:"center"}}><span className='payment-address-title-pk' style={{color:"white"}}>Delivery Address</span></p></b>
+                <div className='payment-addr-cont-pk box-shadow-pk' style={{marginBottom:"10px"}}>
                     <div className='addr-location-icon-div-pk'>
                         <div className='addr-location-icon-pk'></div>
                         <div className='addr-text-div-pk'>
@@ -100,7 +100,7 @@ function Payment() {
                         <span>{localStorage.getItem("userLoginNumber")}</span>
                     </div>
                 </div>
-                <span className='payment-address-title-pk'>Order Details</span>
+                <b><p style={{backgroundColor:"#29b53c",marginLeft:"10px",marginTop:"13px",color:"white",textAlign:"center"}}><span className='payment-address-title-pk' style={{color:"white"}}>Order Details</span></p></b>
                 <div className='price-detail-cont-pk box-shadow-pk'>
                     <div className='payment-addr-cont-pk'>
                         <div className='price-details-cont-pk'>
