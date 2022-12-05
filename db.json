@@ -826,7 +826,7 @@
       },
       {
         "id": 708,
-        "img": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(20).png",
+        "img": "https://c.ndtvimg.com/2020-07/ds980vng_pizza_625x300_07_July_20.jpg",
         "title": "Chicken Pepperoni",
         "price": 365,
         "rating": 4.5,
@@ -869,8 +869,49 @@
       "title": "Margherita everyday ss pizza",
       "price": 180,
       "ratings": 3.6,
+      "id": 2,
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
+      "title": "Caprese Gourmet Pizza",
+      "price": 390,
+      "ratings": 4,
+      "quantity": 1,
+      "category": "veg_pizza "
+    },
+    {
+      "id": 4,
+      "image": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1",
+      "title": "Peppy paneer pizza",
+      "price": 385,
+      "ratings": 3.9,
       "quantity": 1,
       "category": " veg_pizza"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ytimg.com/vi/fHo1j3VF7VE/maxresdefault.jpg",
+      "title": "Farmhouse cheese burst pizza",
+      "price": 460,
+      "ratings": 4.5,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 702,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(13).png",
+      "title": "Non Veg Supreme",
+      "price": 609,
+      "ratings": 4.6,
+      "quantity": 1,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 703,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png",
+      "title": "Chicken Dominator",
+      "price": 609,
+      "ratings": 4.8,
+      "quantity": 1,
+      "category": "non_veg_pizza"
     },
     {
       "id": 6,
@@ -882,11 +923,11 @@
       "category": " veg_pizza"
     },
     {
-      "id": 5,
-      "image": "https://bizknow.in/PizzaHouse/images/Veg-Pizza/Peppy%20Paneer%20Pizza.jpg",
-      "title": "Pizza house",
-      "price": 295,
-      "ratings": 3.5,
+      "id": 7,
+      "image": "https://www.spicypunch.com/wp-content/uploads/2020/07/veg-pizza.jpg",
+      "title": "Fresh veggie pizza",
+      "price": 450,
+      "ratings": 4.3,
       "quantity": 1,
       "category": "veg_pizza "
     },

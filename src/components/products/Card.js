@@ -71,7 +71,7 @@ const Cards = ({props}) => {
       <div id="cartBtn">
         {/* <Button /> */}
         {/* <button>Details</button> */}
-        <Detailsp />
+        <Detailsp props={props}/>
         <button onClick={()=>addedToCart(props)} >Add to cart</button>
       </div>
 

@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import { useSelector } from "react-redux";
-
+import Footer from '../navbar/Footer/Footer'
 import Cards from "./Card";
 import './product.css';
 
@@ -65,7 +65,7 @@ const Beverages = () => {
       >
         <select
           style={{
-            backgroundColor: "095c91",
+            backgroundColor: "#095c91",
             borderRadius: "10px",
             padding: "10px",
             color:"white"
@@ -79,7 +79,7 @@ const Beverages = () => {
         </select>
         <select
           style={{
-            backgroundColor: "095c91",
+            backgroundColor: "#095c91",
             borderRadius: "10px",
             padding: "10px",
             color:"white"
@@ -105,7 +105,7 @@ const Beverages = () => {
      : <h1>Data is empty</h1>}
      
     </div>
-
+     <Footer />
     </>
   )
 }

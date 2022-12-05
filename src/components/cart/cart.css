@@ -151,7 +151,8 @@
     width: 1rem;
     height: 1.5rem;
     background-size: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2.0rem;
+    
   }
   
   .adrs-wrpr-div-pk{
@@ -169,6 +170,17 @@
   }
   .current-adrs-div-pk{
     float: left;
+   
+  }
+  .current-adrs-div-pk > p:first-child{
+    margin-left: -20px;
+    margin-top: -10px;
+    font-size: 20px ;
+  }
+  .current-adrs-div-pk > p:last-child{
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
   }
   .current-adrs-pk{
     margin: 0px auto;
@@ -312,8 +324,8 @@
     padding: 0.7rem 1.5rem;
     width: 100%;
     height: 2.5rem;
-    background: rgb(130, 187, 55);
-    color: rgb(255, 255, 255);
+    background: #82bb37;
+    color: white;
     cursor: pointer;
     border-radius: 3px;
     outline: none;

@@ -36,7 +36,7 @@ export const CartMap = ({props,func}) => {
     }
 
   return (
-    <div className='cartItem-container-pk box-shadow-pk'>
+    <div className='cartItem-container-pk box-shadow-pk' style={{boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"}}>
         <div className='cartItem-image-pk'>
             <img className='cursor-pointer-pk' src={props.image} />
         </div>

@@ -6,6 +6,7 @@ import { useContext } from 'react'
 import { navContext } from '../../Context/NavbarContext'
 import Animation from '../Animation'
 import { useNavigate,Link } from 'react-router-dom'
+import { useEffect } from 'react'
 const Navbar = () => {
   const {handleSidebar}=useContext(navContext);
   const {handleCart}=useContext(navContext);
@@ -14,23 +15,40 @@ const Navbar = () => {
   const {showcart}=useContext(navContext);
   const {handleSearch}=useContext(navContext);
   const {showside} =useContext(navContext);
-
-  let[userNumber,setUserNumber] = useState("") ;
+const [statusCheck,setStatusCheck]=useState(false);
+  let[userNumber,setUserNumber] = useState(localStorage.getItem("userLoginNumber")) ;
+  useEffect(()=>{
+    setUserNumber(userNumber);
+    if(userNumber!==""){
+      setStatusCheck(true);
+    }
+    else{
+      setStatusCheck(true);
+    }
+  },[userNumber])
 
   const navigate=useNavigate();
 const handle_login_status_navbar=()=>{
-
-    
-
+  // setStatusCheck(true);
+  // setUserNumber() ;
+  
     navigate("/login")
 
 }
 
-if(userNumber !=""){
-  console.log(userNumber) ;
-  setUserNumber(userNumber) ;
+const handle_logout_status_navbar=()=>{
+
+  localStorage.setItem("userLoginNumber","");
+  setStatusCheck(false);
 
 }
+
+// if(userNumber !=""){
+//   console.log(userNumber) ;
+ 
+  
+// }
+
 
 
 
@@ -63,14 +81,12 @@ if(userNumber !=""){
       <div className='navbar_login_container'>
   <div><i class="fa-solid fa-user"></i></div>
   <div>
-    {showlogin ? <div className='navbar_data_content'>
-    {userNumber}
-    </div> :
+    {/* <button onClick={handle_login_status_navbar}>Login</button> */}
     <div className='navbar_login_content'>
-    <div>Profile</div>
-    <div><button onClick={handle_login_status_navbar}>Login</button></div>
+    <div>{localStorage.getItem("userLoginNumber")!=="" ?localStorage.getItem("userLoginNumber") : "Profile" }</div>
+    <div>{localStorage.getItem("userLoginNumber")!=="" ?   <button onClick={handle_logout_status_navbar}>Logout</button> :<button onClick={handle_login_status_navbar}>Login</button> } </div>
     </div>
-    }
+    
   </div>
       </div>
       {/* <i class="fa-solid fa-magnifying-glass"></i> */}
