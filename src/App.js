@@ -16,8 +16,8 @@ import Home from "./components/landing_pg/home";
 import ResetPasswordForm from "./components/landing_pg/Login/Login";
 import {AddressContext} from './components/cart/addressContext/AddressContext'
 import PaymentDone from "./components/cart/PaymentDone";
-import Button from "./components/Button/Button";
-import ButtonCheck from "./components/ButtonCheck";
+
+
 // import AuthContext from "./components/landing_pg/LoginContext/LoginContext";
 
 
