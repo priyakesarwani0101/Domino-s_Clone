@@ -29,10 +29,10 @@ import Loading from './components/product_details/Loading'
 
    return (
     <div className="App">
-      <Loading/>
+       
       
       
-       {/* <NavbarContext />
+       <NavbarContext />
      
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -47,7 +47,7 @@ import Loading from './components/product_details/Loading'
        <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<ResetPasswordForm />}></Route>
          <Route path="/paymentCompleted" element={<PaymentDone />}></Route>
-      </Routes> */}
+      </Routes>
 
     
 
