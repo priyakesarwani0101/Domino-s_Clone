@@ -17,6 +17,7 @@ import Home from "./components/landing_pg/home";
 import ResetPasswordForm from "./components/landing_pg/Login/Login";
 import {AddressContext} from './components/cart/addressContext/AddressContext'
 import PaymentDone from "./components/cart/PaymentDone";
+import Loading from './components/product_details/Loading'
 
 
 // import AuthContext from "./components/landing_pg/LoginContext/LoginContext";
@@ -28,9 +29,10 @@ import PaymentDone from "./components/cart/PaymentDone";
 
    return (
     <div className="App">
+      <Loading/>
       
       
-       <NavbarContext />
+       {/* <NavbarContext />
      
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -45,7 +47,7 @@ import PaymentDone from "./components/cart/PaymentDone";
        <Route path="/payment" element={<Payment />}></Route>
         <Route path="/login" element={<ResetPasswordForm />}></Route>
          <Route path="/paymentCompleted" element={<PaymentDone />}></Route>
-      </Routes>
+      </Routes> */}
 
     
 

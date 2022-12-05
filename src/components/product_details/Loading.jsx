@@ -28,7 +28,7 @@ const Loading = () => {
           {/* adding backdrop-blur property to the element */}
           <Box sx={outerBoxStyles}>
             <Box sx={innerBoxStyles} backdropFilter='auto' backdropBlur='8px'>
-              {/* <Image src='https://www.icegif.com/wp-content/uploads/pizza-icegif.gif' alt='gif'/> */}
+              <Image src='https://www.icegif.com/wp-content/uploads/pizza-icegif.gif' alt='gif'/>
             </Box>
           </Box>
            
