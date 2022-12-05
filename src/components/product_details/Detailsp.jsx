@@ -53,15 +53,15 @@ function Detailsp() {
           initialFocusRef={firstField}
           onClose={onClose}
           size='lg'
-          height="500px"
+           
           overflow-y='scroll'
           
         >
           <DrawerOverlay />
-          <DrawerContent overflowY='scroll' border="3px solid green"  height="650px">
+          <DrawerContent overflowY='scroll' border="3px solid green"   >
             {/* <DrawerCloseButton /> */}
             {/* <DrawerHeader borderBottomWidth='1px'> */}
-            {/* <Box boxSize='sm' w="96%" h="250px" position='relative' >
+            <Box boxSize='sm' w="96%" h="250px" position='relative' >
                <Image ml='10px'   objectFit='cover' m='auto' src='https://images.dominos.co.in/PIZ0171.jpg' alt='Dan Abramov'  />
                <Heading color='white' ml='50px' mt='-70px' position='absolute'>₹ {price }</Heading>
                </Box>
@@ -97,7 +97,7 @@ function Detailsp() {
                         <span style={{backgroundColor:'green',color:'white'}}> ₹ {price}</span></Box></Box>
                     </Box>
                 </Box>
-                <Box ml='60px'><Heading size='sm'>Add Veg Toppings @  ₹ 50.00 each  </Heading> </Box> */}
+                <Box ml='60px'><Heading size='sm'>Add Veg Toppings @  ₹ 50.00 each  </Heading> </Box>
                 <Box>
                     <UncontrolledExample  price={{price,getPrice}}/>
                 </Box>
