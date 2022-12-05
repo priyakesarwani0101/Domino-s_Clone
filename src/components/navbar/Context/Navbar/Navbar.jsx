@@ -20,14 +20,7 @@ const Navbar = () => {
   const navigate=useNavigate();
 const handle_login_status_navbar=()=>{
 
-    // setUserNumber(localStorage.getItem("userLoginNumber")) ;
-    // if(userNumber == ""){
-    //   navigate("/login") ;
-    //   handleLogin(false) ;
-    // }else{
-    //   setUserNumber(userNumber) ;
-    //   handleLogin(true) ;
-    // }
+    
 
     navigate("/login")
 
@@ -39,12 +32,7 @@ if(userNumber !=""){
 
 }
 
-// if(userNumber == ""){
-//   // navigate("/login") ;
-//   handleLogin(false) ;
-// }else{
-//   handleLogin(true) ;
-// }
+
 
   const handleshowCart =()=>{
     if(showcart){
