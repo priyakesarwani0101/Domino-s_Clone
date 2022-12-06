@@ -12,7 +12,7 @@ const Flip_cart_card=({props,index, func})=>{
     const [backrotate,setbackrotate]=useState(false);
    const cartdata= JSON.parse(localStorage.getItem("cartItems"))||[];
 const increaseCount= async ()=>{
- await  fetch(`http://localhost:3002/cartItems/${props.id}`,
+ await  fetch(`https://domino-replica.onrender.com/cartItems/${props.id}`,
  {
   method:"PATCH",
   body:JSON.stringify({
@@ -24,10 +24,10 @@ const increaseCount= async ()=>{
  }
     )
        
-        func("http://localhost:3002/cartItems")
+        func("https://domino-replica.onrender.com/cartItems")
 }
 const decreaseCount=async ()=>{
-  await fetch(`http://localhost:3002/cartItems/${props.id}`,
+  await fetch(`https://domino-replica.onrender.com/cartItems/${props.id}`,
  {
   method:"PATCH",
   body:JSON.stringify({
@@ -38,7 +38,7 @@ const decreaseCount=async ()=>{
   }
  }
     )
-    func("http://localhost:3002/cartItems")
+    func("https://domino-replica.onrender.com/cartItems")
 }
 
     const handleRemoveCart= async()=>{
@@ -47,7 +47,7 @@ const decreaseCount=async ()=>{
         setbackrotate(true);
         
         
-    await   fetch(`http://localhost:3002/cartItems/${props.id}`,
+    await   fetch(`https://domino-replica.onrender.com/cartItems/${props.id}`,
         {
          method:"DELETE",
 
@@ -59,7 +59,7 @@ const decreaseCount=async ()=>{
  
         )
 
-        func("http://localhost:3002/cartItems")
+        func("https://domino-replica.onrender.com/cartItems")
         
     }
     return(

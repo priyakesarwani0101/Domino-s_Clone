@@ -25,7 +25,7 @@ import './search.css'
     }
     useEffect(()=>{
         
-        fetchdata(`http://localhost:3002/domino_data?q=${query}&_limit=4`)
+        fetchdata(`https://domino-replica.onrender.com/domino_data?q=${query}&_limit=4`)
     },[query,handleSearch])
     
     const fetchdata= async(url)=>{

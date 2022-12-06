@@ -862,5 +862,33 @@
       }
     ]
   },
-  "cartItems": []
+  "cartItems": [
+    {
+      "id": 701,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(14).png",
+      "title": "Chicken Golden Delight",
+      "price": 450,
+      "ratings": 4.7,
+      "quantity": 1,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 703,
+      "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png",
+      "title": "Chicken Dominator",
+      "price": 609,
+      "ratings": 4.8,
+      "quantity": 1,
+      "category": "non_veg_pizza"
+    },
+    {
+      "id": 704,
+      "image": "https://www.dominos.co.in//files/items/Pepper_Barbeque_&_Onion.jpg",
+      "title": "PEPPER BARBECUE & ONION",
+      "price": 385,
+      "ratings": 4.5,
+      "quantity": 1,
+      "category": "non_veg_pizza"
+    }
+  ]
 }
