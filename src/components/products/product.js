@@ -14,7 +14,7 @@ const Product = () => {
     getMenuData();
   }, []);
   const getMenuData = () => {
-    fetch("http://localhost:3002/domino_data")
+    fetch("https://domino-replica.onrender.com/domino_data")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

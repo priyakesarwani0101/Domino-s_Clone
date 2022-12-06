@@ -26,7 +26,7 @@ const Cards = ({props}) => {
        setAdded(false)
      }, 2000);
  
- fetch("http://localhost:3002/cartItems",
+ fetch("https://domino-replica.onrender.com/cartItems",
  {
   method:"POST",
   body:JSON.stringify(props),
@@ -48,7 +48,7 @@ const Cards = ({props}) => {
     console.log(e);
   }
   }
-  fetchdata("http://localhost:3002/cartItems")
+  fetchdata("https://domino-replica.onrender.com/cartItems")
     // cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         // cartItems.push(props);
 
@@ -85,4 +85,4 @@ const Cards = ({props}) => {
 
 export default Cards;
 
-// http://localhost:3002/cartItems
+// https://domino-replica.onrender.com/cartItems

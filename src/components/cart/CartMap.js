@@ -3,7 +3,7 @@ import React from 'react'
 export const CartMap = ({props,func}) => {
 
     const increaseCount= async ()=>{
-        await  fetch(`http://localhost:3002/cartItems/${props.id}`,
+        await  fetch(`https://domino-replica.onrender.com/cartItems/${props.id}`,
         {
          method:"PATCH",
          body:JSON.stringify({
@@ -15,14 +15,14 @@ export const CartMap = ({props,func}) => {
         }
            )
               
-               func("http://localhost:3002/cartItems")
+               func("https://domino-replica.onrender.com/cartItems")
        }
 
        const handleRemoveCart= async()=>{
        
         
         
-    await   fetch(`http://localhost:3002/cartItems/${props.id}`,
+    await   fetch(`https://domino-replica.onrender.com/cartItems/${props.id}`,
         {
          method:"DELETE",
 
@@ -31,7 +31,7 @@ export const CartMap = ({props,func}) => {
          }
         }
         )
-        func("http://localhost:3002/cartItems")
+        func("https://domino-replica.onrender.com/cartItems")
         
     }
 
