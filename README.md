@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+<h1>Clone of Domino's website</h1>
+<h2>My third Project:</h2>
+Hello, My name is Priya Kesarwani. I am the student of Masai School. Currently I am in unit 6. This blog is all about my third project. We have worked in a team of 5 members.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We have been assigned to clone Domino- Website.
 
-## Available Scripts
+Technologies used:
+In making this project, we used Html, Css, advanced JavaScript, React, Redux, Context API, Chakra UI and local storage.
 
-In the project directory, you can run:
+Task Assignment:
+We have assigned our tasks equally in the team. For example, landing page and login page was created by Sanjay Loncha. Menu page and Product page was created by me. Navbar, footer section and Cart page was created by Ayush Singh. Product Details page was created by Samrat Kumar and address page & payment page was created by Pradip Shukla.
 
-### `npm start`
+Home Page:
+In landing page there is one beautiful navbar and sidebar. sliding images are moving continuously. There is one footer section also.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Login page
+From here, user can login by entering valid mobile number and one OTP will be generated which user will have to fill correctly and accordingly his number will be updated on navbar section.
 
-### `npm test`
+Menu Page:
+In menu page, there are options of 5 category on scrolling down. User can choose any one of them and he will be redirected to that category page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Product Category Page:
+In product page, user can buy any of the items by adding it in the cart. User can also see the details of that particular product by clicking on details button. User can sort the product by its price and its ratings also. He can also search for anything from the searchbar.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Product Details page:
+In details section, users have options to choose the size of the pizza. He can also add toppings and price will change accordingly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Cart Page:
+In cart Page, user can increase and decrease the quantity and also he can delete the items from cart and price will change accordingly. There is one option of coupon also from where user can apply coupon.User can apply DOMINO20 code and he will get 20% off from the total price.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Address and Payment page:
+Here user have to fill their correct address details and click on the save and continue button and he will be redirected to payment page.
+In payment page, there are three options available for user. He can either choose cash on delivery, credit card or debit card option for payment and after filling all the correct details his payment will be done and he will be redirected to thankyou page.
+After successful payment, user will be redirected to this page and from here he can again go to landing page.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is a brief summary of our project. It was a great experience doing this project. We have learnt so many things in making the project. This would not have been possible without the team support. All the team members were so supportive and co-operative. Special thanks to all our teachers and mentors who guided us so well.
